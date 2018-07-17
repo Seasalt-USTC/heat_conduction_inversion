@@ -1,5 +1,5 @@
-from utils import *
 import globalVar
+from utils import *
 
 def CN_D(Ts, Tb, kappa, u, Tic, sh=np.zeros((globalVar.Nt + 1, globalVar.Nz + 1), dtype=np.float64)):
     """

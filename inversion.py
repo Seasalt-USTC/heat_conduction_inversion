@@ -1,4 +1,6 @@
 from forward import *
+from utils import *
+import matplotlib.pyplot as plt
 import os
 
 # TODO: put sh in the inversion.

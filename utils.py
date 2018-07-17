@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+'''utils'''
 def integrate(f, delta):
     """
     Do integeation on a array with trapezoidal method.
@@ -71,4 +72,20 @@ def plot_log(logfile, PATH, frame='semilogy'):
     plt.ylabel('J')
     plt.savefig(PATH + '/J.png')
 
-# TODO: plot velocity filed
+def plot_velocity(u, mode, PATH, zTotal=0, tTotal=0):
+    if mode == 'space':
+        plt.plot(np.linspace(0, zTotal, np.shape(u)[1]), u[0, :], color='black')
+        plt.xlabel('z')
+        plt.ylabel('u')
+        plt.title('u_uniform Velocity field')
+        plt.savefig(PATH + '/u.png')
+        plt.cla()
+    elif mode == 'time':
+        plt.plot(np.linspace(0, tTotal, np.shape(u)[0]), u[:, 0], color='black')
+        plt.xlabel('t')
+        plt.ylabel('u')
+        plt.title('u_uniform Velocity field')
+        plt.savefig(PATH + '/u.png')
+        plt.cla()
+
+

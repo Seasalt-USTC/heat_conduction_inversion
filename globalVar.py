@@ -30,7 +30,7 @@ def gauss(sigma_2, mu, x):
     return f
 z = np.linspace(0, zTotal, Nz + 1)
 
-'''Array like velocity filed'''
+'''velocity filed'''
 #####################################################################
 u0 = np.zeros((Nt+1, Nz+1), dtype=np.float32)
 u_uniform = np.ones((Nt+1, Nz+1), dtype=np.float32)
@@ -61,31 +61,7 @@ for n in range(Nt+1):
 
 
 
-'''internal heat source sh=H/c'''
-#####################################################################
-sh_uniform = np.ones((Nt + 1, Nz + 1), dtype=np.float64) * 0.005
-def sh_continental(sh0=23.574, hr=10, u=u0):
-    """
-    Standard model of exponential distribute with depth radioactive heat source.
-    If uplift velocity -u is not equal to zero, then sh0 changes due to erosion.
-        u should be uniform in space.
-        If u is not uniform in space, only use u at the surface.
-    H0: mean heat generation per unit mass at the surface
-    c: heat capacity
-    hr: At depth z=hr, H is 1/e of its surface value.
-    """
-    sh = np.ones((Nt + 1, Nz + 1), dtype=np.float64)
-    for n in range(Nt + 1):
-        shs = sh0 * np.e ** (integrate(u[0:n+1, 0], deltat) / hr)
-        for i in range(Nz + 1):
-            zi = i * deltaz
-            sh[:, i] = shs * np.e ** (-zi/hr)
-    return sh
-#####################################################################
-
-
-
-'''Array like temperature I.C.'''
+'''temperature I.C.'''
 #####################################################################
 # constant
 Tic0 = np.zeros(Nz+1, dtype=np.float32)
@@ -113,6 +89,30 @@ Tic41 = -gauss(0.05**2, 0.5, z) / 3 + z / zTotal
 def Tic_continent(p=p, sh0=23.574, hr=10):
     T = Ts + p * z + sh0/kappa * hr**2 * (1 - np.e**(-z/hr))
     return T
+#####################################################################
+
+
+
+'''internal heat source sh=H/c'''
+#####################################################################
+sh_uniform = np.ones((Nt + 1, Nz + 1), dtype=np.float64) * 0.005
+def sh_continental(sh0=23.574, hr=10, u=u0):
+    """
+    Standard model of exponential distribute with depth radioactive heat source.
+    If uplift velocity -u is not equal to zero, then sh0 changes due to erosion.
+        u should be uniform in space.
+        If u is not uniform in space, only use u at the surface.
+    H0: mean heat generation per unit mass at the surface
+    c: heat capacity
+    hr: At depth z=hr, H is 1/e of its surface value.
+    """
+    sh = np.ones((Nt + 1, Nz + 1), dtype=np.float64)
+    for n in range(Nt + 1):
+        shs = sh0 * np.e ** (integrate(u[0:n+1, 0], deltat) / hr)
+        for i in range(Nz + 1):
+            zi = i * deltaz
+            sh[:, i] = shs * np.e ** (-zi/hr)
+    return sh
 #####################################################################
 
 

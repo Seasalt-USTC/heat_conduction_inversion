@@ -119,7 +119,7 @@ def gauss(sigma_2, mu, x):
     return f
 z = np.linspace(0, 1, Nz + 1)
 
-# constant zero
+# constant
 Tic0 = np.zeros(Nz+1, dtype=np.float32)
 
 # linear and others

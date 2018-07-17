@@ -11,78 +11,12 @@ deltat = tTotal / Nt  # time step
 
 kappa = 0.02  # thermal conductivity
 
-'''Function like velocity distribution'''
-def u0(PATH='some_value', plot=False):
-    ufield = np.zeros((Nt+1, Nz+1), dtype=np.float32)
-    if plot:
-        plt.plot(np.linspace(0, zTotal, Nz+1), ufield[0, :], color='black')
-        plt.xlabel('z')
-        plt.ylabel('u')
-        plt.title('u0 Velocity field')
-        plt.savefig(PATH + '/u_uniform.png')
-        plt.cla()
-    return ufield
-def u_uniform(PATH='some_value', plot=False):
-    ufield = np.ones((Nt+1, Nz+1), dtype=np.float32)
-    ufield *= -0.05
-    if plot:
-        plt.plot(np.linspace(0, zTotal, Nz+1), ufield[0, :], color='black')
-        plt.xlabel('z')
-        plt.ylabel('u')
-        plt.title('u_uniform Velocity field')
-        plt.savefig(PATH + '/u_uniform.png')
-        plt.cla()
-    return ufield
-def u_step_space(PATH='some_value', plot=False):
-    ufield = np.ones((Nt+1, Nz+1), dtype=np.float32)
-    for i in range(Nz+1):
-        z = i * deltaz
-        if z <= zTotal/2:
-            ufield[:, i] = 0
-        else:
-            ufield[:, i] = -0.05
-    ufield = ufield * 3
-    if plot:
-        plt.plot(np.linspace(0, zTotal, Nz+1), ufield[0, :], color='black')
-        plt.xlabel('z')
-        plt.ylabel('u')
-        plt.title('u_step_space Velocity field')
-        plt.savefig(PATH + '/u_step_space.png')
-        plt.cla()
-    return ufield
-def u_smooth_step_space(PATH='some_value', plot=False):
-    ufield = np.ones((Nt+1, Nz+1), dtype=np.float32)
-    for i in range(Nz+1):
-        z = i * deltaz
-        if z <= zTotal * 0.4:
-            ufield[:, i] = 0
-        elif z >= zTotal * 0.6:
-            ufield[:, i] = -0.05
-        else:
-            ufield[:, i] = -0.25 * z + 0.1
-    ufield = ufield * 3
-    if plot:
-        plt.plot(np.linspace(0, zTotal, Nz+1), ufield[0, :], color='black')
-        plt.xlabel('z')
-        plt.ylabel('u')
-        plt.title('u_smooth_step_space Velocity field')
-        plt.savefig(PATH + '/u_smooth_step_space.png')
-        plt.cla()
-    return ufield
-def u_gaussian_time(PATH='some_value', plot=False):
-    ufield = np.ones((Nt+1, Nz+1), dtype=np.float32)
-    for n in range(Nt+1):
-        t = n * deltat
-        ufield[n, :] = - gauss(0.1**2, 0.5, t) * 0.1
-    if plot:
-        plt.ylim(-0.1, 0.1)
-        plt.plot(np.linspace(0, tTotal, Nt+1), ufield[:, 0], color='black')
-        plt.xlabel('t')
-        plt.ylabel('u')
-        plt.title('u_gaussian_time Velocity field')
-        plt.savefig(PATH + '/u_gaussian_time.png')
-        plt.cla()
-    return  ufield
+'''Array like velocity filed'''
+u0 = np.zeros((Nt+1, Nz+1), dtype=np.float32)
+u_uniform = np.ones((Nt+1, Nz+1), dtype=np.float32)
+u_step_space = np.ones((Nt+1, Nz+1), dtype=np.float32)
+u_smooth_step_space = np.ones((Nt+1, Nz+1), dtype=np.float32)
+u_gaussian_time = np.ones((Nt+1, Nz+1), dtype=np.float32)
 
 T0 = 0  # Temperature at the top
 T1 = 1  # Temperature at the bottom (only useful under Dirichlet B.C.)

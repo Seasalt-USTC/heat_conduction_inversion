@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
 zTotal = 1  # total depth of the box(stick)
 Nz = 100  # space mesh
@@ -66,15 +65,16 @@ for n in range(Nt+1):
 #####################################################################
 s_uniform = np.ones((Nt + 1, Nz + 1), dtype=np.float64) * 0.005
 # TODO: non-dimensional q_continent
-def s_continental(H0, c, hr=10):
+def s_continental(s0, hr=10):
     """
     Standard model of exponential distribute with depth radioactive heat source.
     The return value is non-dimensional.
     H0: mean heat generation per unit mass at the surface
     c: heat capacity
-    hr: km
+    s0 = H0 / c
+    hr: At depth z=hr, H is 1/e of its surface value.
     """
-    s = H0 * np.e ** (-z)
+    s = s0 * np.e ** (-z/hr)
     return s
 #####################################################################
 

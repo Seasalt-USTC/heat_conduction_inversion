@@ -92,7 +92,17 @@ p = 0.9188  # Temperature gradient at the bottom (only useful under Neumann B.C.
 def q_uniform(qs):
     q = np.ones((Nt + 1, Nz + 1), dtype=np.float64) * qs
     return q
-def q_continental(qs, hr):
+# TODO
+def q_continental(qs=56.5, k=3.35, qm=30, hr=10):
+    """
+    Standard model of exponential distribute with depth radioactive heat source.
+    The return value is non-dimensional.
+    qs: mW*m^-2
+    k: W*m^-1*K^-1
+    qm: mW*m^-2
+    hr: km
+    """
+    return 0
 
 epsilon = 1e-4  # Tolerance scope
 MAX = 500  # Max iteration times

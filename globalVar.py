@@ -9,7 +9,7 @@ tTotal = 1000  # total time we will compute
 Nt = 1000  # number of time steps
 deltat = tTotal / Nt  # time step
 
-kappa = 0.002  # thermal conductivity
+kappa = 0.02  # thermal conductivity
 
 '''Function like velocity distribution'''
 def u0(PATH='some_value', plot=False):
@@ -87,7 +87,12 @@ def u_gaussian_time(PATH='some_value', plot=False):
 T0 = 0  # Temperature at the top
 T1 = 1  # Temperature at the bottom (only useful under Dirichlet B.C.)
 p = 0.9188  # Temperature gradient at the bottom (only useful under Neumann B.C.)
-q = 0  # internal heat source H/c
+
+# internal heat source H/c
+def q_uniform(qs):
+    q = np.ones((Nt + 1, Nz + 1), dtype=np.float64) * qs
+    return q
+def q_continental(qs, hr):
 
 epsilon = 1e-4  # Tolerance scope
 MAX = 500  # Max iteration times

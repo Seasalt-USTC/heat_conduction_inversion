@@ -137,7 +137,7 @@ Tic31 = gauss(0.05**2, 0.4, z)
 Tic32 = gauss(0.1 ** 2, 0.4, z) / 3
 Tic33 = gauss(0.01 ** 2, 0.4, z) / 3
 
-# Guassian plus linear and ~
+# Guassian plus linear and others
 Tic41 = -gauss(0.05**2, 0.5, z) / 3 + z
 
 # Continental geotherm

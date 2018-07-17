@@ -19,11 +19,11 @@ from inversion import *
 # PATH = 'case/case002'
 # plot_log(PATH + '/log.txt', PATH)
 
-# T = CN_D(T0=0, T1=0, kappa=globalVar.kappa, u=globalVar.u(), Tic=globalVar.Tic_real())
-T = CN_N(T0=0, p=1, kappa=globalVar.kappa, u=globalVar.u0(), Tic=globalVar.Tic11(),
+# T = CN_D(Ts=0, Tb=0, kappa=globalVar.kappa, u=globalVar.u(), Tic=globalVar.Tic_real())
+T = CN_N(Ts=0, p=1, kappa=globalVar.kappa, u=globalVar.u0(), Tic=globalVar.Tic11(),
          q=np.ones((globalVar.Nt+1, globalVar.Nz+1), dtype=np.float64) * 0.005)
-# T = CN_D_B(T0=0, T1=0, kappa=globalVar.kappa, u=globalVar.u, Tec=Tic2())
-# T = CN_N_B(T0=0, p=0, kappa=globalVar.kappa, u=globalVar.u, Tec=Tic2())
+# T = CN_D_B(Ts=0, Tb=0, kappa=globalVar.kappa, u=globalVar.u, Tec=Tic2())
+# T = CN_N_B(Ts=0, p=0, kappa=globalVar.kappa, u=globalVar.u, Tec=Tic2())
 
 # outputnStep = int(globalVar.outputTimeStep / globalVar.deltat)
 #

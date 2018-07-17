@@ -1,17 +1,17 @@
 import numpy as np
 
-zTotal = 1  # total depth of the box(stick)
+zTotal = 100  # total depth of the box(stick)
 Nz = 100  # space mesh
 deltaz = zTotal / Nz  # space step
 
-tTotal = 1000  # total time we will compute
-Nt = 1000  # number of time steps
+tTotal = 100  # total time we will compute
+Nt = 100  # number of time steps
 deltat = tTotal / Nt  # time step
 
-kappa = 0.02  # thermal conductivity
+kappa = 0.02  # thermal diffusivity
 
-T0 = 0  # Temperature at the top
-T1 = 1  # Temperature at the bottom (only useful under Dirichlet B.C.)
+Ts = 0  # Temperature at the surface
+Tb = 1  # Temperature at the bottom (only useful under Dirichlet B.C.)
 p = 0.9188  # Temperature gradient at the bottom (only useful under Neumann B.C.)
 
 epsilon = 1e-4  # Tolerance scope

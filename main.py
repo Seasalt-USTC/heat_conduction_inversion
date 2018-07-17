@@ -13,12 +13,12 @@ def main():
 
     start_time = time.clock()
 
-    # Td = CN_D(T0=globalVar.T0, T1=globalVar.T1, kappa=globalVar.kappa, u=globalVar.u(PATH, True), Tic=globalVar.Tic_real())[-1, :]
-    # Tic = Inversion_method(T0=globalVar.T0, T1=globalVar.T1, kappa=globalVar.kappa, u=globalVar.u(),
+    # Td = CN_D(Ts=globalVar.Ts, Tb=globalVar.Tb, kappa=globalVar.kappa, u=globalVar.u(PATH, True), Tic=globalVar.Tic_real())[-1, :]
+    # Tic = Inversion_method(Ts=globalVar.Ts, Tb=globalVar.Tb, kappa=globalVar.kappa, u=globalVar.u(),
     #                   Td = Td, Tic0=globalVar.Tic_guess(), epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH)
 
-    Td = CN_N(T0=globalVar.T0, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u(PATH, True), Tic=globalVar.Tic_real())[-1, :]
-    Tic = Inversion_method(T0=globalVar.T0, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u(),
+    Td = CN_N(Ts=globalVar.Ts, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u(PATH, True), Tic=globalVar.Tic_real())[-1, :]
+    Tic = Inversion_method(Ts=globalVar.Ts, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u(),
                       Td = Td, Tic0=globalVar.Tic_guess(), epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH)
 
     # plot
@@ -30,7 +30,7 @@ def main():
     plt.ylabel('T')
     plt.text(0, 0.7, 't = {:<7}\nkappa = {:<7.5}\n'
                      'u = {:<}\nTic_real = {:<}\nTic_guess = {:<}\n'
-                     'Set T0 always positive: {}\n'
+                     'Set Ts always positive: {}\n'
                      'Epsilon = {:<10.0e}'.
              format(globalVar.tTotal, globalVar.kappa,
                     globalVar.u.__name__, globalVar.Tic_real.__name__, globalVar.Tic_guess.__name__,

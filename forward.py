@@ -1,6 +1,7 @@
 from utils import *
+import globalVar
 
-def CN_D(Ts, Tb, kappa, u, Tic, q=np.zeros((globalVar.Nt + 1, globalVar.Nz + 1), dtype=np.float64)):
+def CN_D(Ts, Tb, kappa, u, Tic, sh=np.zeros((globalVar.Nt + 1, globalVar.Nz + 1), dtype=np.float64)):
     """
     Crank-Nicolson method with Dirichlet B.C.
     Ts as the surface T, Tb as the bottom T.
@@ -30,7 +31,7 @@ def CN_D(Ts, Tb, kappa, u, Tic, q=np.zeros((globalVar.Nt + 1, globalVar.Nz + 1),
             RH[i - 1] = r * T[n - 1, i - 1] \
                         + (1 - 2 * r + s[i]) * T[n - 1, i] \
                         + (r - s[i]) * T[n - 1, i + 1] \
-                        + (q[n - 1, i] + q[n, i])/2 * globalVar.deltat
+                        + (sh[n - 1, i] + sh[n, i])/2 * globalVar.deltat
         d = RH
         d[0] = d[0] + r * Ts
         d[Nz - 1 - 1] = d[Nz - 1 - 1] - (s[Nz - 1] - r) * Tb
@@ -50,7 +51,7 @@ def CN_D(Ts, Tb, kappa, u, Tic, q=np.zeros((globalVar.Nt + 1, globalVar.Nz + 1),
                 continue
             T[n, i] = Ttemp[i - 1]
     return T
-def CN_N(Ts, p, kappa, u, Tic, q=np.zeros((globalVar.Nt + 1, globalVar.Nz + 1), dtype=np.float64)):
+def CN_N(Ts, p, kappa, u, Tic, sh=np.zeros((globalVar.Nt + 1, globalVar.Nz + 1), dtype=np.float64)):
     """
     Crank-Nicolson method with Neumann B.C.
     Ts as the surface T, p as the bottom gradient.
@@ -78,12 +79,12 @@ def CN_N(Ts, p, kappa, u, Tic, q=np.zeros((globalVar.Nt + 1, globalVar.Nz + 1), 
                 RH[i - 1] = r * T[n - 1, i - 1] \
                             + (1 - r) * T[n - 1, i] \
                             + (r - s[i]) * globalVar.deltaz * p \
-                            + (q[n - 1, i] + q[n, i])/2 * globalVar.deltat
+                            + (sh[n - 1, i] + sh[n, i])/2 * globalVar.deltat
                 continue
             RH[i - 1] = r * T[n - 1, i - 1] \
                         + (1 - 2 * r + s[i]) * T[n - 1, i] \
                         + (r - s[i]) * T[n - 1, i + 1] \
-                        + (q[n - 1, i] + q[n, i])/2 * globalVar.deltat
+                        + (sh[n - 1, i] + sh[n, i])/2 * globalVar.deltat
         d = RH
         d[0] = d[0] + r * Ts
         d[Nz - 1] = d[Nz - 1] - (s[Nz] - r) * globalVar.deltaz * p

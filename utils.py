@@ -1,15 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import globalVar
 
-def integrate(f):
+def integrate(f, delta):
     """
     Do integeation on a array with trapezoidal method.
     """
-
     I = np.sum(f)
     I -= (f[0] + f[-1])/2
-    I *= globalVar.deltaz
+    I *= delta
     return I
 def norm_abs(a):
     """

@@ -1,6 +1,7 @@
 from forward import *
 import os
 
+# TODO: put sh in the inversion.
 # TODO: modify
 def Inversion_D_Steepest(Ts, Tb, kappa, u, Td, Tic0, epsilon, MAX, PATH):
     """

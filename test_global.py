@@ -20,8 +20,9 @@ from inversion import *
 # plot_log(PATH + '/log.txt', PATH)
 
 # T = CN_D(Ts=0, Tb=0, kappa=globalVar.kappa, u=globalVar.u(), Tic=globalVar.Tic_real())
-T = CN_N(Ts=0, p=1, kappa=globalVar.kappa, u=globalVar.u0(), Tic=globalVar.Tic11(),
-         q=np.ones((globalVar.Nt+1, globalVar.Nz+1), dtype=np.float64) * 0.005)
+# TODO
+T = CN_N(Ts=0, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u_uniform * (-0), Tic=globalVar.Tic_continent(hr=10),
+         sh=globalVar.sh_continental(u=globalVar.u_uniform * (-0), hr=10))
 # T = CN_D_B(Ts=0, Tb=0, kappa=globalVar.kappa, u=globalVar.u, Tec=Tic2())
 # T = CN_N_B(Ts=0, p=0, kappa=globalVar.kappa, u=globalVar.u, Tec=Tic2())
 
@@ -34,9 +35,15 @@ T = CN_N(Ts=0, p=1, kappa=globalVar.kappa, u=globalVar.u0(), Tic=globalVar.Tic11
 #         for i in range(0, globalVar.Nz + 1, outputiStep):
 #             f.write('{:10f} {:10f} {:10f}\n'.format(n * globalVar.deltat, i * globalVar.deltaz, T[n, i]))
 
+qs = (T[:, 1] - T[:, 0]) / globalVar.deltaz * 3.35
 
-plt.plot(np.linspace(0, 1, globalVar.Nz + 1), T[0, :], 'r-',
-         np.linspace(0, 1, globalVar.Nz + 1), T[int(globalVar.Nt/2), :], 'g-',
-         np.linspace(0, 1, globalVar.Nz + 1), T[-1, :], 'b-',
-         )
+plt.cla()
+# plt.xlim(0, 40)
+# plt.ylim(0, 600)
+# plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[0, :], 'r-',
+#          np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[int(globalVar.Nt/2), :], 'g-',
+#          np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[-1, :], 'b-',
+#          )
+plt.plot(np.linspace(0, globalVar.tTotal, globalVar.Nt + 1), qs, 'r-', label='qs')
+plt.legend()
 plt.show()

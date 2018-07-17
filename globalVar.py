@@ -11,32 +11,9 @@ deltat = tTotal / Nt  # time step
 
 kappa = 0.02  # thermal conductivity
 
-'''Array like velocity filed'''
-u0 = np.zeros((Nt+1, Nz+1), dtype=np.float32)
-u_uniform = np.ones((Nt+1, Nz+1), dtype=np.float32)
-u_step_space = np.ones((Nt+1, Nz+1), dtype=np.float32)
-u_smooth_step_space = np.ones((Nt+1, Nz+1), dtype=np.float32)
-u_gaussian_time = np.ones((Nt+1, Nz+1), dtype=np.float32)
-
 T0 = 0  # Temperature at the top
 T1 = 1  # Temperature at the bottom (only useful under Dirichlet B.C.)
 p = 0.9188  # Temperature gradient at the bottom (only useful under Neumann B.C.)
-
-# internal heat source H/c
-def q_uniform(qs):
-    q = np.ones((Nt + 1, Nz + 1), dtype=np.float64) * qs
-    return q
-# TODO
-def q_continental(qs=56.5, k=3.35, qm=30, hr=10):
-    """
-    Standard model of exponential distribute with depth radioactive heat source.
-    The return value is non-dimensional.
-    qs: mW*m^-2
-    k: W*m^-1*K^-1
-    qm: mW*m^-2
-    hr: km
-    """
-    return 0
 
 epsilon = 1e-4  # Tolerance scope
 MAX = 500  # Max iteration times
@@ -44,7 +21,8 @@ MAX = 500  # Max iteration times
 outputTimeStep = 0.01
 outputSpaceStep = 0.01
 
-'''Array like temperature I.C.'''
+
+
 def gauss(sigma_2, mu, x):
     """
     A Gaussian like function with max value of 1
@@ -53,6 +31,57 @@ def gauss(sigma_2, mu, x):
     return f
 z = np.linspace(0, 1, Nz + 1)
 
+'''Array like velocity filed'''
+#####################################################################
+u0 = np.zeros((Nt+1, Nz+1), dtype=np.float32)
+u_uniform = np.ones((Nt+1, Nz+1), dtype=np.float32)
+
+u_step_space = np.ones((Nt+1, Nz+1), dtype=np.float32)
+for i in range(Nz + 1):
+    zi = i * deltaz
+    if zi <= zTotal / 2:
+        u_step_space[:, i] = 0
+    else:
+        u_step_space[:, i] = -0.05
+
+u_smooth_step_space = np.ones((Nt+1, Nz+1), dtype=np.float32)
+for i in range(Nz + 1):
+        zi = i * deltaz
+        if zi <= zTotal * 0.4:
+            u_smooth_step_space[:, i] = 0
+        elif zi >= zTotal * 0.6:
+            u_smooth_step_space[:, i] = -0.05
+        else:
+            u_smooth_step_space[:, i] = -0.25 * z + 0.1
+
+u_gaussian_time = np.ones((Nt+1, Nz+1), dtype=np.float32)
+for n in range(Nt+1):
+    tn = n * deltat
+    u_gaussian_time[n, :] = - gauss(0.1**2, 0.5, tn) * 0.1
+#####################################################################
+
+
+
+'''internal heat source s=H/c'''
+#####################################################################
+s_uniform = np.ones((Nt + 1, Nz + 1), dtype=np.float64) * 0.005
+# TODO: non-dimensional q_continent
+def s_continental(H0, c, hr=10):
+    """
+    Standard model of exponential distribute with depth radioactive heat source.
+    The return value is non-dimensional.
+    H0: mean heat generation per unit mass at the surface
+    c: heat capacity
+    hr: km
+    """
+    s = H0 * np.e ** (-z)
+    return s
+#####################################################################
+
+
+
+'''Array like temperature I.C.'''
+#####################################################################
 # constant
 Tic0 = np.zeros(Nz+1, dtype=np.float32)
 
@@ -76,6 +105,9 @@ Tic41 = -gauss(0.05**2, 0.5, z) / 3 + z
 
 # Continental geotherm
 Tic_continent = 0.9188 * z + 0.0812 * (1-np.e**(-10*z))
+#####################################################################
+
+
 
 u = u_uniform
 Tic_real = Tic_continent

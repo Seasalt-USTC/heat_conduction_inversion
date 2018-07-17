@@ -59,13 +59,18 @@ def solveTri(a, b, c, d, n):
     return x
 # print (solveTri(1, 2, 3, [1, 1, 1], 3))
 
-def plot_log(logfile, PATH):
+def plot_log(logfile, PATH, frame='semilogy'):
     J = []
     with open(logfile) as f:
         for line in f.readlines()[0: -1]:
             J.append( float(line.split()[2]) )
     plt.cla()
-    plt.semilogy(J, label='J')
+    if frame == 'semilogy':
+        plt.semilogy(J, label='J')
+    elif frame == 'loglog':
+        plt.loglog(J, label='J')
     plt.xlabel('k')
     plt.ylabel('J')
     plt.savefig(PATH + '/J.png')
+
+# TODO: plot velocity filed

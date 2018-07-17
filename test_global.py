@@ -17,14 +17,7 @@ from inversion import *
 
 # plt.cla()
 # PATH = 'case/case002'
-# J = []
-# with open(PATH + '/log.txt') as f:
-#     for line in f.readlines()[0: -1]:
-#         J.append(float(line.split()[2]))
-# plt.semilogy(J, label='J')
-# plt.xlabel('k')
-# plt.ylabel('J')
-# plt.savefig(PATH + '/J.png')
+# plot_log(PATH + '/log.txt', PATH)
 
 # T = CN_D(T0=0, T1=0, kappa=globalVar.kappa, u=globalVar.u(), Tic=globalVar.Tic_real())
 T = CN_N(T0=0, p=1, kappa=globalVar.kappa, u=globalVar.u0(), Tic=globalVar.Tic11(),

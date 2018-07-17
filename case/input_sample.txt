@@ -1,0 +1,20 @@
+zTotal = 1  # total depth of the box(stick)
+Nz = 100  # space mesh
+deltaz = zTotal / Nz  # space step
+
+tTotal = 1  # total time we will compute
+Nt = 10  # number of time steps
+deltat = tTotal / Nt  # time step
+
+kappa = 0.002  # thermal conductivity
+u = 0.05  # convention velocity
+
+T0 = 0  # Temperature at the top
+T1 = 0  # Temperature at the bottom (only useful under Dirichlet B.C.)
+p = 0  # Temperature gradient at the bottom (only useful under Neumann B.C.)
+
+epsilon = 1e-4  # Tolerance scope
+MAX = 10000  # Max iteration times
+
+Tic_real = Tic23()
+Tic_guess = Tic22()

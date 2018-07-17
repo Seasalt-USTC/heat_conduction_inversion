@@ -2,7 +2,7 @@ import os
 import time
 from forward import *
 
-# TODO: test
+# TODO: modify
 def Inversion_D_Steepest(T0, T1, kappa, u, Td, Tic0, epsilon, MAX, PATH):
     """
     Inverse heat conduction equation with the iteration of adjoint equation method

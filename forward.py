@@ -102,8 +102,7 @@ def CN_N(T0, p, kappa, u, Tic, q=np.zeros((globalVar.Nt + 1, globalVar.Nz + 1), 
             T[n, i] = Ttemp[i - 1]
     return T
 
-"""
-def CN_D_B(zTotal, deltaz, tTotal, deltat, T0, T1, kappa, u, Tec, Tfile):
+def CN_D_B_(zTotal, deltaz, tTotal, deltat, T0, T1, kappa, u, Tec):
     # Solve the adjoint equation back in time with Crank-Nicolson method with Dirichlet B.C.
     # from Tec back to 0
     # T0 as the top T, T1 as the bottom T.
@@ -154,7 +153,6 @@ def CN_D_B(zTotal, deltaz, tTotal, deltat, T0, T1, kappa, u, Tec, Tfile):
                 continue
             T[n, i] = Ttemp[i - 1]
     return T
-"""
 
 def CN_D_B(T0, T1, kappa, u, Tec):
     """

@@ -110,72 +110,38 @@ MAX = 500  # Max iteration times
 outputTimeStep = 0.01
 outputSpaceStep = 0.01
 
-'''Function like temperature I.C.'''
+'''Array like temperature I.C.'''
 def gauss(sigma_2, mu, x):
     """
     A Gaussian like function with max value of 1
     """
     f = np.e**( -(x-mu)**2 / (2*sigma_2) )
     return f
+z = np.linspace(0, 1, Nz + 1)
 
 # constant zero
-def Tic0():
-    T = np.zeros(Nz+1, dtype=np.float32)
-    return T
+Tic0 = np.zeros(Nz+1, dtype=np.float32)
 
 # linear and others
-def Tic11():
-    z = np.linspace(0, 1, Nz + 1)
-    T = z
-    return T
-def Tic12():
-    z = np.linspace(0, 1, Nz + 1)
-    T = z**2
-    return T
+Tic11 = z
+Tic12 = z ** 2
 
 # Guassian 0.5
-def Tic21():
-    z = np.linspace(0, 1, Nz + 1)
-    T = gauss(0.05**2, 0.5, z)
-    return T
-def Tic22():
-    z = np.linspace(0, 1, Nz + 1)
-    T = gauss(0.1**2, 0.5, z) / 3
-    return T
-def Tic23():
-    z = np.linspace(0, 1, Nz + 1)
-    T = gauss(0.01**2, 0.5, z)
-    return T
-def Tic24():
-    z = np.linspace(0, 1, Nz + 1)
-    T = gauss(0.03**2, 0.5, z)
-    return T
+Tic21 = gauss(0.05**2, 0.5, z)
+Tic22 = gauss(0.1**2, 0.5, z) / 3
+Tic23 = gauss(0.01**2, 0.5, z)
+Tic24 = gauss(0.03 ** 2, 0.5, z)
 
 # Guassian 0.4
-def Tic31():
-    z = np.linspace(0, 1, Nz + 1)
-    T = gauss(0.05**2, 0.4, z)
-    return T
-def Tic32():
-    z = np.linspace(0, 1, Nz + 1)
-    T = gauss(0.1**2, 0.4, z) / 3
-    return T
-def Tic33():
-    z = np.linspace(0, 1, Nz + 1)
-    T = gauss(0.01**2, 0.4, z) / 3
-    return T
+Tic31 = gauss(0.05**2, 0.4, z)
+Tic32 = gauss(0.1 ** 2, 0.4, z) / 3
+Tic33 = gauss(0.01 ** 2, 0.4, z) / 3
 
 # Guassian plus linear and ~
-def Tic41():
-    z = np.linspace(0, 1, Nz + 1)
-    T = -gauss(0.05**2, 0.5, z) / 3 + z
-    return T
+Tic41 = -gauss(0.05**2, 0.5, z) / 3 + z
 
 # Continental geotherm
-def Tic_continent():
-    z = np.linspace(0, 1, Nz + 1)
-    T = 0.9188 * z + 0.0812 * (1-np.e**(-10*z))
-    return  T
+Tic_continent = 0.9188 * z + 0.0812 * (1-np.e**(-10*z))
 
 u = u_uniform
 Tic_real = Tic_continent

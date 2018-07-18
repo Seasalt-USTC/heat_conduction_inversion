@@ -177,6 +177,6 @@ def CN_N_B(Ts, p, kappa, u, Tec):
     but with velocity -u instead of u
     """
 
-    T = CN_D(Ts, p, kappa, -u, Tec)
+    T = CN_N(Ts, p, kappa, -u, Tec)
     T = np.flip(T, 0)
     return T

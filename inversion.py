@@ -387,6 +387,74 @@ def Inversion_N_Steepest(Ts, p, kappa, u, Td, Tic0, epsilon, MAX, PATH):
         else:
             log.write('Return: max iterations')
             return T0k
+def Inversion_N_Steepest_sh(Ts, p, kappa, u, Td, Tic0, epsilon, MAX, PATH, sh=np.zeros((globalVar.Nt+1, globalVar.Nz+1))):
+    """
+    Inverse heat conduction equation with the iteration of adjoint equation method
+    from Td back to 0.
+    Td is the data obtained today.
+    Tic0 is a initial guess of the iteration.
+    """
+
+    logFile = PATH + '/log.txt'
+    T0k = Tic0
+    with open(logFile, 'a') as log:
+        for k in range(MAX):
+            if k == 0:
+                T1k = CN_N(Ts=Ts, p=p, kappa=kappa, u=u, Tic=T0k, sh=sh)[-1, :]
+                Jk = norm_2(T1k - Td)
+            else:
+                T0k = T0k1
+                T1k = T1k1
+                Jk = Jk1
+            if not os.path.exists(PATH + '/T0'):
+                os. mkdir(PATH + '/T0')
+            if not os.path.exists(PATH + '/T1'):
+                os. mkdir(PATH + '/T1')
+            if k % 50 == 0:  # plot
+                # plt.ylim(-0.1, 1.1)
+                plt.plot(np.linspace(0, globalVar.tTotal, globalVar.Nz + 1), T0k, 'r-', label='Tick')
+                plt.plot(np.linspace(0, globalVar.tTotal, globalVar.Nz + 1), globalVar.Tic_real, 'b-', label='Tic_real')
+                no = '{:0>4}'.format(str(k))
+                plt.xlabel('z')
+                plt.ylabel('Ts')
+                plt.legend(loc='upper right')
+                plt.savefig(PATH + '/T0/'+ no + 'T0.png')
+                plt.cla()
+
+                # plt.ylim(-0.1, 1.1)
+                plt.plot(np.linspace(0, globalVar.tTotal, globalVar.Nz + 1), T1k, 'r-', label='T1n')
+                plt.plot(np.linspace(0, globalVar.tTotal, globalVar.Nz + 1), Td, 'b-', label='Td')
+                no = '{:0>4}'.format(str(k))
+                plt.xlabel('z')
+                plt.ylabel('Tb')
+                plt.legend(loc='upper right')
+                plt.savefig(PATH + '/T1/'+ no + 'T1.png')
+                plt.cla()
+
+            log.write('J{:<4} = {:<9.7}\n'.format(k, Jk))  # write log
+            if Jk <= epsilon:
+                log.write('Return: J is lower than epsilon.')
+                return T0k
+
+            lambda0k = CN_N_B(Ts=0, p=0, kappa=kappa, u=u, Tec=2 * (T1k - Td))[0, :]
+            alphak = 1
+            T0k1 = T0k - alphak * lambda0k
+            T1k1 = CN_N(Ts=Ts, p=p, kappa=kappa, u=u, Tic=T0k1, sh=sh)[-1, :]
+            Jk1 = norm_2(T1k1 - Td)
+            while Jk1 > Jk:
+                if not globalVar.line_search:
+                    break
+                if alphak < 1e-10:
+                    log.write('Return: alphak is smaller than 1e-10.')
+                    return T0k1
+                alphak /= 2
+                T0k1 = T0k - alphak * lambda0k
+                T1k1 = CN_N(Ts=Ts, p=p, kappa=kappa, u=u, Tic=T0k1, sh=sh)[-1, :]
+                Jk1 = norm_2(T1k1 - Td)
+            print(alphak)
+        else:
+            log.write('Return: max iterations')
+            return T0k
 def Inversion_N_BFGS_root(Ts, p, kappa, u, Td, Tic0, epsilon, MAX, PATH):
     """
     Inverse heat conduction equation with the iteration of adjoint equation method

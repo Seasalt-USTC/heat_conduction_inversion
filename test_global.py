@@ -21,9 +21,13 @@ from inversion import *
 
 # T = CN_D(Ts=0, Tb=0, kappa=globalVar.kappa, u=globalVar.u(), Tic=globalVar.Tic_real())
 
-T = CN_N(Ts=0, p=globalVar.pm, kappa=globalVar.kappa, u=globalVar.u_uniform * (-globalVar.u_mag),
-         Tic=globalVar.Tic_continent(p=globalVar.pm, sh0=globalVar.sh0, hr=globalVar.hr),
-         sh=globalVar.sh_continental(u=globalVar.u_uniform * (-globalVar.u_mag), sh0=globalVar.sh0, hr=globalVar.hr))
+# T = CN_N(Ts=0, p=globalVar.pm, kappa=globalVar.kappa, u=globalVar.u,
+#          Tic=globalVar.Tic_continent(p=globalVar.pm, sh0=globalVar.sh0, hr=globalVar.hr),
+#          sh=globalVar.sh_continental(u=globalVar.u, sh0=globalVar.sh0, hr=globalVar.hr))
+T = CN_N(Ts=0, p=globalVar.pm, kappa=globalVar.kappa, u=globalVar.u,
+         Tic=globalVar.Tic0,
+         sh=globalVar.sh_continental(u=globalVar.u, sh0=globalVar.sh0, hr=globalVar.hr) * 0)
+
 # T = CN_D_B(Ts=0, Tb=0, kappa=globalVar.kappa, u=globalVar.u, Tec=Tic2())
 # T = CN_N_B(Ts=0, p=0, kappa=globalVar.kappa, u=globalVar.u, Tec=Tic2())
 

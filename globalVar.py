@@ -124,7 +124,7 @@ def sh_continental(sh0, hr, u=u0):
 
 u = u_uniform * (-u_mag)
 Tic_real = Tic_continent(pm, sh0, hr)
-Tic_guess = Tic11 * pm * zTotal
+Tic_guess = Tic0
 
 # u = u_uniform * (-0.1)
 # Tic_real = Tic11

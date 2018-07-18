@@ -68,11 +68,8 @@ def CN_N(Ts, p, kappa, u, Tic, sh=np.zeros((globalVar.Nt + 1, globalVar.Nz + 1),
         s = globalVar.deltat * u[n, :] / 2 / globalVar.deltaz
         # print(n)
         if n == 0:  # initialize
-            for i in range(Nz + 1):
-                if i == 0:
-                    T[n, i] = Ts
-                    continue
-                T[n, i] = Tic[i]
+            T[n, :] = Tic
+            T[n, 0] = Ts
             continue
         for i in range(1, Nz + 1):
             if i == Nz:

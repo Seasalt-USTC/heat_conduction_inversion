@@ -1,11 +1,11 @@
 from utils import *
 
-zTotal = 400  # total depth of the box(stick)  km
-Nz =  1 * zTotal  # space mesh
+zTotal = 200  # total depth of the box(stick)  km
+Nz =  200  # space mesh
 deltaz = zTotal / Nz  # space step
 
-tTotal = 1000  # total time we will compute  Ma
-Nt = 1 * tTotal  # number of time steps
+tTotal = 200  # total time we will compute  Ma
+Nt = 1000  # number of time steps
 deltat = tTotal / Nt  # time step
 
 kappa = 31.6  # thermal diffusivity  km^2 * Ma^-1
@@ -84,9 +84,8 @@ Tic33 = gauss(0.01 ** 2, 0.4, z) / 3
 # Guassian plus linear and others
 Tic41 = -gauss(0.05**2, 0.5, z) / 3 + z / zTotal
 
-# TODO: Continental geotherm
 # Continental geotherm
-def Tic_continent(p=p, sh0=23.574, hr=10):
+def Tic_continent(p, sh0, hr):
     T = Ts + p * z + sh0/kappa * hr**2 * (1 - np.e**(-z/hr))
     return T
 #####################################################################
@@ -96,7 +95,7 @@ def Tic_continent(p=p, sh0=23.574, hr=10):
 '''internal heat source sh=H/c'''
 #####################################################################
 sh_uniform = np.ones((Nt + 1, Nz + 1), dtype=np.float64) * 0.005
-def sh_continental(sh0=23.574, hr=10, u=u0):
+def sh_continental(sh0, hr, u=u0):
     """
     Standard model of exponential distribute with depth radioactive heat source.
     If uplift velocity -u is not equal to zero, then sh0 changes due to erosion.
@@ -111,7 +110,7 @@ def sh_continental(sh0=23.574, hr=10, u=u0):
         shs = sh0 * np.e ** (integrate(u[0:n+1, 0], deltat) / hr)
         for i in range(Nz + 1):
             zi = i * deltaz
-            sh[:, i] = shs * np.e ** (-zi/hr)
+            sh[n, i] = shs * np.e ** (-zi/hr)
     return sh
 #####################################################################
 

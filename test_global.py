@@ -25,8 +25,8 @@ from inversion import *
 #          Tic=globalVar.Tic_continent(p=globalVar.pm, sh0=globalVar.sh0, hr=globalVar.hr),
 #          sh=globalVar.sh_continental(u=globalVar.u, sh0=globalVar.sh0, hr=globalVar.hr))
 T = CN_N(Ts=0, p=globalVar.pm, kappa=globalVar.kappa, u=globalVar.u,
-         Tic=globalVar.Tic0,
-         sh=globalVar.sh_continental(u=globalVar.u, sh0=globalVar.sh0, hr=globalVar.hr) * 0)
+         Tic=globalVar.Tic_continent(p=globalVar.pm, sh0=globalVar.sh0, hr=globalVar.hr),
+         sh=globalVar.sh_continental(u=globalVar.u, sh0=globalVar.sh0, hr=globalVar.hr))
 
 # T = CN_D_B(Ts=0, Tb=0, kappa=globalVar.kappa, u=globalVar.u, Tec=Tic2())
 # T = CN_N_B(Ts=0, p=0, kappa=globalVar.kappa, u=globalVar.u, Tec=Tic2())
@@ -51,12 +51,13 @@ qs = (T[:, 1] - T[:, 0]) / globalVar.deltaz * 3.35
 plt.cla()
 plt.xlim(0, 100)
 plt.ylim(0, 1000)
-plt.text(5, 700, 'zTotal = {:<7}\n'
+plt.text(0.05, 0.6, 'zTotal = {:<7}\n'
                  'qm = {:<7}\nk = {:<7}\nkappa = {:<7}\n'
                  'u = {:<7}\nrho*H0 = {:<7}\nhr = {:<7}'.
          format(globalVar.zTotal,
                 globalVar.qm, globalVar.k, globalVar.kappa,
-                globalVar.u_mag, globalVar.rho_H0, globalVar.hr))
+                globalVar.u_mag, globalVar.rho_H0, globalVar.hr),
+         transform=plt.gca().transAxes)
 plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[0, :], 'r-',
          np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[int(globalVar.Nt/2), :], 'g-',
          np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[-1, :], 'b-',
@@ -65,13 +66,16 @@ plt.savefig(PATH + '/a.png')
 plt.cla()
 
 plt.plot(np.linspace(0, globalVar.tTotal, globalVar.Nt + 1), qs, 'r-', label='qs')
-plt.legend()
-plt.text(5, qs[0], 'zTotal = {:<7}\n'
+plt.legend(loc='lower right')
+plt.text(0.05, 0.6, 'zTotal = {:<7}\n'
                  'qm = {:<7}\nk = {:<7}\nkappa = {:<7}\n'
-                 'u = {:<7}\nrho*H0 = {:<7}\nhr = {:<7}'.
+                 'u = {:<7}\nrho*H0 = {:<7}\nhr = {:<7}\n'
+                 'Pe = {:<5.3}'.
          format(globalVar.zTotal,
                 globalVar.qm, globalVar.k, globalVar.kappa,
-                globalVar.u_mag, globalVar.rho_H0, globalVar.hr))
+                globalVar.u_mag, globalVar.rho_H0, globalVar.hr,
+                globalVar.Pe),
+         transform=plt.gca().transAxes)
 plt.savefig(PATH + '/b.png')
 plt.cla()
 
@@ -81,12 +85,13 @@ plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[0, :], 'r-',
          np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[int(globalVar.Nt/2), :], 'g-',
          np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[-1, :], 'b-',
          )
-plt.text(0.5, 70, 'zTotal = {:<7}\n'
+plt.text(0.05, 0.6, 'zTotal = {:<7}\n'
                  'qm = {:<7}\nk = {:<7}\nkappa = {:<7}\n'
                  'u = {:<7}\nrho*H0 = {:<7}\nhr = {:<7}'.
          format(globalVar.zTotal,
                 globalVar.qm, globalVar.k, globalVar.kappa,
-                globalVar.u_mag, globalVar.rho_H0, globalVar.hr))
+                globalVar.u_mag, globalVar.rho_H0, globalVar.hr),
+         transform=plt.gca().transAxes)
 plt.savefig(PATH + '/c.png')
 plt.cla()
 

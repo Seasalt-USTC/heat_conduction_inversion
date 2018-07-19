@@ -4,8 +4,8 @@ zTotal = 200  # total depth of the box(stick)  km
 Nz =  100  # space mesh
 deltaz = zTotal / Nz  # space step
 
-tTotal = 200  # total time we will compute  Ma
-Nt = 200  # number of time steps
+tTotal = 1000  # total time we will compute  Ma
+Nt = 2000  # number of time steps
 deltat = tTotal / Nt  # time step
 
 kappa = 31.6  # thermal diffusivity  km^2 * Ma^-1
@@ -27,6 +27,7 @@ u_mag = 0.1  # km * Ma^-1
 rho_H0 = 2.5  # rho*H0 muW * m^-3 == kW * km^-3
 sh0 = rho_H0 * kappa / k  # K * Ma^-1
 hr = 10  # km
+Pe = u_mag * hr / kappa
 
 def gauss(sigma_2, mu, x):
     """

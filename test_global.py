@@ -46,27 +46,13 @@ while os.path.exists(PATH):
     n += 1
     PATH = 'Continental_Geotherms/' + '{:0>3}'.format(n)
 os.mkdir(PATH)
+PATH = 'Continental_Geotherms'
+
 qs = (T[:, 1] - T[:, 0]) / globalVar.deltaz * 3.35
 
 plt.cla()
-plt.xlim(0, 100)
-plt.ylim(0, 1000)
-plt.text(0.05, 0.6, 'zTotal = {:<7}\n'
-                 'qm = {:<7}\nk = {:<7}\nkappa = {:<7}\n'
-                 'u = {:<7}\nrho*H0 = {:<7}\nhr = {:<7}'.
-         format(globalVar.zTotal,
-                globalVar.qm, globalVar.k, globalVar.kappa,
-                globalVar.u_mag, globalVar.rho_H0, globalVar.hr),
-         transform=plt.gca().transAxes)
-plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[0, :], 'r-',
-         np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[int(globalVar.Nt/2), :], 'g-',
-         np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[-1, :], 'b-',
-         )
-plt.savefig(PATH + '/a.png')
-plt.cla()
-
-plt.plot(np.linspace(0, globalVar.tTotal, globalVar.Nt + 1), qs, 'r-', label='qs')
-plt.legend(loc='lower right')
+# plt.xlim(0, 100)
+# plt.ylim(0, 1000)
 plt.text(0.05, 0.6, 'zTotal = {:<7}\n'
                  'qm = {:<7}\nk = {:<7}\nkappa = {:<7}\n'
                  'u = {:<7}\nrho*H0 = {:<7}\nhr = {:<7}\n'
@@ -76,22 +62,27 @@ plt.text(0.05, 0.6, 'zTotal = {:<7}\n'
                 globalVar.u_mag, globalVar.rho_H0, globalVar.hr,
                 globalVar.Pe),
          transform=plt.gca().transAxes)
-plt.savefig(PATH + '/b.png')
+plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[0, :],
+         'r-', label='    0 Ma')
+plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[int(globalVar.Nt/2), :],
+         'g-', label='{:>5}'.format(int(globalVar.tTotal/2)) +' Ma')
+plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[-1, :],
+         'b-', label='{:>5}'.format(globalVar.tTotal) + ' Ma')
+plt.legend(loc='lower right')
+plt.title('T')
+plt.savefig(PATH + '/T' + '{:0>3}'.format(n) + '.png')
 plt.cla()
 
-plt.xlim(0, 10)
-plt.ylim(0, 100)
-plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[0, :], 'r-',
-         np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[int(globalVar.Nt/2), :], 'g-',
-         np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T[-1, :], 'b-',
-         )
+plt.plot(np.linspace(0, globalVar.tTotal, globalVar.Nt + 1), qs, 'r-', label='qs')
+plt.title('qs')
 plt.text(0.05, 0.6, 'zTotal = {:<7}\n'
                  'qm = {:<7}\nk = {:<7}\nkappa = {:<7}\n'
-                 'u = {:<7}\nrho*H0 = {:<7}\nhr = {:<7}'.
+                 'u = {:<7}\nrho*H0 = {:<7}\nhr = {:<7}\n'
+                 'Pe = {:<5.3}'.
          format(globalVar.zTotal,
                 globalVar.qm, globalVar.k, globalVar.kappa,
-                globalVar.u_mag, globalVar.rho_H0, globalVar.hr),
+                globalVar.u_mag, globalVar.rho_H0, globalVar.hr,
+                globalVar.Pe),
          transform=plt.gca().transAxes)
-plt.savefig(PATH + '/c.png')
+plt.savefig(PATH + '/qs' + '{:0>3}'.format(n) + '.png')
 plt.cla()
-

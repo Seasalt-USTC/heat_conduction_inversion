@@ -4,7 +4,7 @@ import time
 import globalVar
 import matplotlib.pyplot as plt
 
-Inversion_method = Inversion_N_Steepest
+Inversion_method = Inversion_N_BFGS_root
 
 def main():
     n = 1

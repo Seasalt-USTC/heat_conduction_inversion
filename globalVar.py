@@ -8,7 +8,7 @@ tTotal = 200  # total time we will compute  Ma
 Nt = 200  # number of time steps
 deltat = tTotal / Nt  # time step
 
-kappa = 31.6  # thermal diffusivity  km^2 * Ma^-1
+kappa = 0.005  # thermal diffusivity  km^2 * Ma^-1
 
 Ts = 0  # Temperature at the surface  K
 Tb = 0  # Temperature at the bottom (only useful under Dirichlet B.C.)  K
@@ -125,8 +125,9 @@ def sh_continental(sh0, hr, u=u0):
 
 u = u_uniform * (-u_mag)
 Tic_real = Tic_continent(pm, sh0, hr)
-# Tic_guess = Tic11 * pm * zTotal
-Tic_guess = np.loadtxt('case/case004/T.txt')
+# Tic_real = Tic12
+Tic_guess = Tic11 * zTotal * pm
+# Tic_guess = np.loadtxt('case/case004/T.txt')
 
 # u = u_uniform * (-0.1)
 # Tic_real = Tic11

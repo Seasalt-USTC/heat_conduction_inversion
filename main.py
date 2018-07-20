@@ -4,7 +4,7 @@ import time
 import globalVar
 import matplotlib.pyplot as plt
 
-Inversion_method = Inversion_N_Steepest_sh
+Inversion_method = Inversion_N_Steepest
 
 def main():
     n = 1
@@ -13,6 +13,7 @@ def main():
         n += 1
         PATH = 'case/' + 'case' + '{:0>3}'.format(n)
     os.mkdir(PATH)
+
 
     start_time = time.clock()
 
@@ -30,6 +31,8 @@ def main():
                            Td = Td, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH,
                            sh=globalVar.sh_continental(sh0=globalVar.sh0, hr=globalVar.hr, u=globalVar.u))
 
+    np.savetxt(PATH + '/T.txt', Tic, fmt='%10.5f')
+
     # plot
     plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), Td, 'r-', label='Td')
     plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), globalVar.Tic_real, 'g--', label='Tic_real')
@@ -37,10 +40,15 @@ def main():
     plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), globalVar.Tic_guess, 'b--', label='Tic_guess')
     plt.xlabel('z')
     plt.ylabel('T')
-    plt.text(0, 0, 't = {:<7}\nkappa = {:<7.5}\n'
-                     'Epsilon = {:<10.0e}'.
-             format(globalVar.tTotal, globalVar.kappa,
-                    globalVar.epsilon))
+    plt.text(0.05, 0.6, 'zTotal = {:<7}\n'
+                        'qm = {:<7}\nk = {:<7}\nkappa = {:<7}\n'
+                        'u = {:<7}\nrho*H0 = {:<7}\nhr = {:<7}\n'
+                        'Pe = {:<5.3}'.
+             format(globalVar.zTotal,
+                    globalVar.qm, globalVar.k, globalVar.kappa,
+                    globalVar.u_mag, globalVar.rho_H0, globalVar.hr,
+                    globalVar.Pe),
+             transform=plt.gca().transAxes)
     plt.legend(loc='upper right')
     plt.title('{} Result'.format(Inversion_method.__name__))
 

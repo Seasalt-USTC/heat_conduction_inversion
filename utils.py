@@ -61,7 +61,7 @@ def solveTri(a, b, c, d, n):
 def plot_log(logfile, PATH, frame='semilogy'):
     J = []
     with open(logfile) as f:
-        for line in f.readlines()[0: -1]:
+        for line in f.readlines()[0: -2]:
             J.append( float(line.split()[2]) )
     plt.cla()
     if frame == 'semilogy':

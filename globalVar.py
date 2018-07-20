@@ -5,7 +5,7 @@ Nz =  100  # space mesh
 deltaz = zTotal / Nz  # space step
 
 tTotal = 200  # total time we will compute  Ma
-Nt = 2000  # number of time steps
+Nt = 200  # number of time steps
 deltat = tTotal / Nt  # time step
 
 kappa = 31.6  # thermal diffusivity  km^2 * Ma^-1
@@ -15,7 +15,7 @@ Tb = 0  # Temperature at the bottom (only useful under Dirichlet B.C.)  K
 p = 1  # Temperature gradient at the bottom (only useful under Neumann B.C.)  K * km^-2
 
 epsilon = 1e-4  # Tolerance scope
-MAX = 500  # Max iteration times
+MAX = 3000  # Max iteration times
 
 outputTimeStep = 0.01
 outputSpaceStep = 0.01
@@ -24,7 +24,7 @@ qm = 30  # mW * m^-2 == kW * km^-2
 k = 3.35  # W * m^-1 * K^-1 == kW * km^-1 * k^-1
 pm = qm / k
 u_mag = 0.1  # km * Ma^-1
-rho_H0 = 10  # rho*H0 muW * m^-3 == kW * km^-3
+rho_H0 = 2.5  # rho*H0 muW * m^-3 == kW * km^-3
 sh0 = rho_H0 * kappa / k  # K * Ma^-1
 hr = 10  # km
 Pe = u_mag * hr / kappa
@@ -125,7 +125,8 @@ def sh_continental(sh0, hr, u=u0):
 
 u = u_uniform * (-u_mag)
 Tic_real = Tic_continent(pm, sh0, hr)
-Tic_guess = Tic0
+# Tic_guess = Tic11 * pm * zTotal
+Tic_guess = np.loadtxt('case/case004/T.txt')
 
 # u = u_uniform * (-0.1)
 # Tic_real = Tic11

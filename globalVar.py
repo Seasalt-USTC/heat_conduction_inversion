@@ -1,21 +1,21 @@
 from utils import *
 
 zTotal = 200  # total depth of the box(stick)  km
-Nz =  100  # space mesh
+Nz =  10  # space mesh
 deltaz = zTotal / Nz  # space step
 
 tTotal = 200  # total time we will compute  Ma
 Nt = 200  # number of time steps
 deltat = tTotal / Nt  # time step
 
-kappa = 0.005  # thermal diffusivity  km^2 * Ma^-1
+kappa = 31.6  # thermal diffusivity  km^2 * Ma^-1
 
 Ts = 0  # Temperature at the surface  K
 Tb = 0  # Temperature at the bottom (only useful under Dirichlet B.C.)  K
 p = 1  # Temperature gradient at the bottom (only useful under Neumann B.C.)  K * km^-2
 
-epsilon = 1e-4  # Tolerance scope
-MAX = 3000  # Max iteration times
+epsilon = 1e-5  # Tolerance scope
+MAX = 1000  # Max iteration times
 
 outputTimeStep = 0.01
 outputSpaceStep = 0.01
@@ -27,7 +27,8 @@ u_mag = 0.1  # km * Ma^-1
 rho_H0 = 2.5  # rho*H0 muW * m^-3 == kW * km^-3
 sh0 = rho_H0 * kappa / k  # K * Ma^-1
 hr = 10  # km
-Pe = u_mag * hr / kappa
+
+Pe = u_mag * zTotal / kappa
 
 def gauss(sigma_2, mu, x):
     """
@@ -101,7 +102,7 @@ def Tic_continent(p, sh0, hr):
 
 '''internal heat source sh=H/c'''
 #####################################################################
-sh_uniform = np.ones((Nt + 1, Nz + 1), dtype=np.float64) * 0.005
+sh_uniform = np.ones((Nt + 1, Nz + 1), dtype=np.float64) * 0.1
 def sh_continental(sh0, hr, u=u0):
     """
     Standard model of exponential distribute with depth radioactive heat source.
@@ -125,8 +126,9 @@ def sh_continental(sh0, hr, u=u0):
 
 u = u_uniform * (-u_mag)
 Tic_real = Tic_continent(pm, sh0, hr)
-# Tic_real = Tic12
+# Tic_real = Tic11
 Tic_guess = Tic11 * zTotal * pm
+# Tic_guess = Tic11 * 0.9
 # Tic_guess = np.loadtxt('case/case004/T.txt')
 
 # u = u_uniform * (-0.1)

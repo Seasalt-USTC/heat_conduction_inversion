@@ -1,18 +1,18 @@
 from utils import *
 
-# zTotal = 200  # total depth of the box(stick)  km
-zTotal = 1
+zTotal = 200  # total depth of the box(stick)  km
+# zTotal = 1
 Nz =  100  # space mesh
 deltaz = zTotal / Nz  # space step
 
-# tTotal = 200  # total time we will compute  Ma
-tTotal = 1
-# Nt = 200  # number of time steps
-Nt = 10
+tTotal = 20  # total time we will compute  Ma
+# tTotal = 1
+Nt = 200  # number of time steps
+# Nt = 10
 deltat = tTotal / Nt  # time step
 
-# kappa = 31.6  # thermal diffusivity  km^2 * Ma^-1
-kappa = 0.005
+kappa = 31.6  # thermal diffusivity  km^2 * Ma^-1
+# kappa = 0.005
 
 Ts = 0  # Temperature at the surface  K
 Tb = 0  # Temperature at the bottom (only useful under Dirichlet B.C.)  K
@@ -27,7 +27,7 @@ outputSpaceStep = 0.01
 qm = 30  # mW * m^-2 == kW * km^-2
 k = 3.35  # W * m^-1 * K^-1 == kW * km^-1 * k^-1
 pm = qm / k
-u_mag = 0.1  # km * Ma^-1
+u_mag = 1  # km * Ma^-1
 rho_H0 = 2.5  # rho*H0 muW * m^-3 == kW * km^-3
 sh0 = rho_H0 * kappa / k  # K * Ma^-1
 hr = 10  # km
@@ -128,17 +128,17 @@ def sh_continental(sh0, hr, u=u0):
 
 
 
-# u = u_uniform * (-u_mag)
-# Tic_real = Tic_continent(pm, sh0, hr)
+u = u_uniform * (-u_mag)
+Tic_real = Tic_continent(pm, sh0, hr)
 # Tic_real = Tic11 * zTotal * pm
-# Tic_guess = Tic11 * zTotal * pm
+Tic_guess = Tic11 * zTotal * pm
 # Tic_guess = Tic_continent(pm, sh0 * 1.2, hr)
 # Tic_guess = Tic12 * 0.5
 # Tic_guess = np.loadtxt('case/case004/T.txt')
 
-u = u_uniform * (-0.1)
-Tic_real = Tic12
-Tic_guess = Tic11 * 2
+# u = u_uniform * (-0.1)
+# Tic_real = Tic12
+# Tic_guess = Tic11
 
 
 line_search = True

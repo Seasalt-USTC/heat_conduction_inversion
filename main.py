@@ -21,22 +21,22 @@ def main():
     # Tic = Inversion_method(Ts=globalVar.Ts, Tb=globalVar.Tb, kappa=globalVar.kappa, u=globalVar.u,
     #                        Td = Td, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH)
 
-    Td = CN_N(Ts=globalVar.Ts, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u, Tic=globalVar.Tic_real)[-1, :]
-    Tic = Inversion_method(Ts=globalVar.Ts, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u,
-                           Td = Td, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH)
+    # Td = CN_N(Ts=globalVar.Ts, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u, Tic=globalVar.Tic_real)[-1, :]
+    # Tic = Inversion_method(Ts=globalVar.Ts, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u,
+    #                        Td = Td, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH)
 
     # Td = CN_N(Ts=globalVar.Ts, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u, Tic=globalVar.Tic_real,
-    #           sh=globalVar.sh_uniform)[-1, :]
-    # # Td = np.loadtxt('Td.txt')
+    #           sh=globalVar.sh_uniform * 0.3)[-1, :]
+    # Td = np.loadtxt('Td.txt')
     # Tic = Inversion_method(Ts=globalVar.Ts, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u,
     #                        Td = Td, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH,
-    #                        sh=globalVar.sh_uniform)
+    #                        sh=globalVar.sh_uniform * 0.3)
 
-    # Td = CN_N(Ts=globalVar.Ts, p=globalVar.pm, kappa=globalVar.kappa, u=globalVar.u, Tic=globalVar.Tic_real,
-    #           sh=globalVar.sh_continental(sh0=globalVar.sh0, hr=globalVar.hr, u=globalVar.u))[-1, :]
-    # Tic = Inversion_method(Ts=globalVar.Ts, p=globalVar.pm, kappa=globalVar.kappa, u=globalVar.u,
-    #                        Td = Td, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH,
-    #                        sh=globalVar.sh_continental(sh0=globalVar.sh0, hr=globalVar.hr, u=globalVar.u))
+    Td = CN_N(Ts=globalVar.Ts, p=globalVar.pm, kappa=globalVar.kappa, u=globalVar.u, Tic=globalVar.Tic_real,
+              sh=globalVar.sh_continental(sh0=globalVar.sh0, hr=globalVar.hr, u=globalVar.u))[-1, :]
+    Tic = Inversion_method(Ts=globalVar.Ts, p=globalVar.pm, kappa=globalVar.kappa, u=globalVar.u,
+                           Td = Td, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH,
+                           sh=globalVar.sh_continental(sh0=globalVar.sh0, hr=globalVar.hr, u=globalVar.u))
 
     np.savetxt(PATH + '/T.txt', Tic, fmt='%10.5f')
 

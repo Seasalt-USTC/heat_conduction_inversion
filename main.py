@@ -4,7 +4,7 @@ import time
 import globalVar
 import matplotlib.pyplot as plt
 
-Inversion_method = Inversion_N_Steepest
+Inversion_method = Inversion_N_BFGS_modified
 
 def main():
     n = 1
@@ -21,9 +21,9 @@ def main():
     # Tic = Inversion_method(Ts=globalVar.Ts, Tb=globalVar.Tb, kappa=globalVar.kappa, u=globalVar.u,
     #                        Td = Td, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH)
 
-    # Td = CN_N(Ts=globalVar.Ts, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u, Tic=globalVar.Tic_real)[-1, :]
-    # Tic = Inversion_method(Ts=globalVar.Ts, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u,
-    #                        Td = Td, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH)
+    Td = CN_N(Ts=globalVar.Ts, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u, Tic=globalVar.Tic_real)[-1, :]
+    Tic = Inversion_method(Ts=globalVar.Ts, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u,
+                           Td = Td, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH)
 
     # Td = CN_N(Ts=globalVar.Ts, p=globalVar.p, kappa=globalVar.kappa, u=globalVar.u, Tic=globalVar.Tic_real,
     #           sh=globalVar.sh_uniform)[-1, :]
@@ -32,55 +32,30 @@ def main():
     #                        Td = Td, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH,
     #                        sh=globalVar.sh_uniform)
 
-    Td = CN_N(Ts=globalVar.Ts, p=globalVar.pm, kappa=globalVar.kappa, u=globalVar.u, Tic=globalVar.Tic_real,
-              sh=globalVar.sh_continental(sh0=globalVar.sh0, hr=globalVar.hr, u=globalVar.u))[-1, :]
-    Tic = Inversion_method(Ts=globalVar.Ts, p=globalVar.pm, kappa=globalVar.kappa, u=globalVar.u,
-                           Td = Td, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH,
-                           sh=globalVar.sh_continental(sh0=globalVar.sh0, hr=globalVar.hr, u=globalVar.u))
+    # Td = CN_N(Ts=globalVar.Ts, p=globalVar.pm, kappa=globalVar.kappa, u=globalVar.u, Tic=globalVar.Tic_real,
+    #           sh=globalVar.sh_continental(sh0=globalVar.sh0, hr=globalVar.hr, u=globalVar.u))[-1, :]
+    # Tic = Inversion_method(Ts=globalVar.Ts, p=globalVar.pm, kappa=globalVar.kappa, u=globalVar.u,
+    #                        Td = Td, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH,
+    #                        sh=globalVar.sh_continental(sh0=globalVar.sh0, hr=globalVar.hr, u=globalVar.u))
 
     np.savetxt(PATH + '/T.txt', Tic, fmt='%10.5f')
 
-    # # plot (continental)
-    # plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), Td, 'r-', label='Td')
-    # plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), globalVar.Tic_real, 'g--', label='Tic_real')
-    # plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), Tic, 'b-', label='Tic')
-    # plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), globalVar.Tic_guess, 'b--', label='Tic_guess')
-    # plt.xlabel('z')
-    # plt.ylabel('T')
-    # plt.text(0.05, 0.6, 'zTotal = {:<7}\n'
-    #                     'qm = {:<7}\nk = {:<7}\nkappa = {:<7}\n'
-    #                     'u = {:<7}\nrho*H0 = {:<7}\nhr = {:<7}\n'
-    #                     'Pe = {:<5.3}'.
-    #          format(globalVar.zTotal,
-    #                 globalVar.qm, globalVar.k, globalVar.kappa,
-    #                 globalVar.u_mag, globalVar.rho_H0, globalVar.hr,
-    #                 globalVar.Pe),
-    #          transform=plt.gca().transAxes)
-    # plt.legend(loc='upper right')
-    # plt.title('{} Result'.format(Inversion_method.__name__))
-    #
-    # plt.savefig(PATH + '/case' + '{:0>3}'.format(n) + 'inversion.png')
-    #
-    # end_time = time.clock()
-    # total_time = end_time - start_time
-    # print(total_time)
-    # with open(PATH + '/log.txt', 'a') as file:
-    #     file.write('Total time used: {:<7.2f}\n'.format(total_time))
-    #
-    # plot_log(PATH + '/log.txt', PATH)
-
     # plot
-    plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), Td, 'r-', label='Td')
-    plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), globalVar.Tic_real, 'g--', label='Tic_real')
-    plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), Tic, 'b-', label='Tic')
-    plt.plot(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), globalVar.Tic_guess, 'b--', label='Tic_guess')
-    plt.xlabel('z')
-    plt.ylabel('T')
-    plt.text(0.05, 0.6, 'deltaz = {:<5.2e}\n'
+    plt.plot(Td, np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), 'r-', label='Td')
+    plt.plot(globalVar.Tic_real,np.linspace(0, globalVar.zTotal, globalVar.Nz + 1),  'g--', label='Tic_real')
+    plt.plot(Tic,np.linspace(0, globalVar.zTotal, globalVar.Nz + 1),  'b-', label='Tic')
+    plt.plot(globalVar.Tic_guess, np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), 'b--', label='Tic_guess')
+    plt.gca().invert_yaxis()
+    plt.xlabel('T')
+    plt.ylabel('z')
+    plt.text(0.05, 0.05, 'deltaz = {:<5.2e}\n'
                         'deltat = {:<5.2e}\n'
                         'tTotal = {:<7.2f}\n'
                         'epsilon = {:<5.2e}\n'
                         'kappa = {:<7}\n'
+                        'qm = {:<7}\n'
+                        'rho*H0 = {:<7}\n'
+                        'hr = {:<7}\n'
                         'u = {:<7}\n'
                         'Pe = {:<5.3}'.
              format(globalVar.deltaz,
@@ -88,6 +63,9 @@ def main():
                     globalVar.tTotal,
                     globalVar.epsilon,
                     globalVar.kappa,
+                    globalVar.qm,
+                    globalVar.rho_H0,
+                    globalVar.hr,
                     globalVar.u_mag,
                     globalVar.Pe),
              transform=plt.gca().transAxes)
@@ -103,9 +81,6 @@ def main():
         file.write('Total time used: {:<7.2f}\n'.format(total_time))
 
     plot_log(PATH + '/log.txt', PATH)
-
-    # for i in range(10):
-
 
     pass
 

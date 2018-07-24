@@ -1,0 +1,9 @@
+J0    = 540.912  
+J1    = 73.55862 
+J2    = 8.862529 
+J3    = 8.849322 
+J4    = 2.75763  
+J5    = 0.03752416
+J6    = 0.009729854
+Return: J is lower than epsilon.
+Total time used: 12.48  

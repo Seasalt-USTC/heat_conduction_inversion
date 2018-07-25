@@ -8,14 +8,14 @@ Inversion_method = Inversion_N_BFGS_modified
 
 def main():
     n = 1
-    PATH = 'case/' + 'case' + '{:0>3}'.format(n)
+    PATH = 'inverte_T_field/' + 'case' + '{:0>3}'.format(n)
     while os.path.exists(PATH):
         n += 1
-        PATH = 'case/' + 'case' + '{:0>3}'.format(n)
+        PATH = 'inverte_T_field/' + 'case' + '{:0>3}'.format(n)
     os.mkdir(PATH)
 
 
-    start_time = time.clock()
+    start_time = time.perf_counter()
 
     # Td = CN_D(Ts=globalVar.Ts, Tb=globalVar.Tb, kappa=globalVar.kappa, u=globalVar.u, Tic=globalVar.Tic_real)[-1, :]
     # Tic = Inversion_method(Ts=globalVar.Ts, Tb=globalVar.Tb, kappa=globalVar.kappa, u=globalVar.u,
@@ -74,7 +74,7 @@ def main():
 
     plt.savefig(PATH + '/case' + '{:0>3}'.format(n) + 'inversion.png')
 
-    end_time = time.clock()
+    end_time = time.perf_counter()
     total_time = end_time - start_time
     print(total_time)
     with open(PATH + '/log.txt', 'a') as file:

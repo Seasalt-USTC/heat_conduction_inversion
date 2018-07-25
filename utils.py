@@ -73,6 +73,7 @@ def plot_log(logfile, PATH, frame='semilogy'):
     plt.savefig(PATH + '/J.png')
 
 def plot_velocity(u, mode, PATH, zTotal=0, tTotal=0):
+    plt.cla()
     if mode == 'space':
         plt.plot(np.linspace(0, zTotal, np.shape(u)[1]), u[0, :], color='black')
         plt.xlabel('z')

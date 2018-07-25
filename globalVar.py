@@ -5,16 +5,16 @@ zTotal = 200  # total depth of the box(stick)  km
 Nz =  100  # space mesh
 deltaz = zTotal / Nz  # space step
 
-tTotal = 20  # total time we will compute  Ma
+tTotal = 100  # total time we will compute  Ma
 # tTotal = 1
-Nt = 200  # number of time steps
+Nt = 100  # number of time steps
 # Nt = 10
 deltat = tTotal / Nt  # time step
 
 kappa = 31.6  # thermal diffusivity  km^2 * Ma^-1
 # kappa = 0.005
 
-Ts = 0  # Temperature at the surface  K
+Ts = 15  # Temperature at the surface  K
 Tb = 0  # Temperature at the bottom (only useful under Dirichlet B.C.)  K
 p = 1  # Temperature gradient at the bottom (only useful under Neumann B.C.)  K * km^-2
 
@@ -68,7 +68,7 @@ for i in range(Nz + 1):
 u_gaussian_time = np.ones((Nt+1, Nz+1), dtype=np.float32)
 for n in range(Nt+1):
     tn = n * deltat
-    u_gaussian_time[n, :] = - gauss(0.1**2, 0.5, tn) * 0.1
+    u_gaussian_time[n, :] = - gauss(10**2, 50, tn) * 2
 #####################################################################
 
 

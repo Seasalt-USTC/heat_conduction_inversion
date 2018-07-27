@@ -1,22 +1,42 @@
 from inversion import *
+import scipy.integrate
 import time
 
 def get_thermal_history(T, u):
     """
-    Get thermal history of the sample at present day at the surface.
+    Get thermal history of the samples at surface today.
+    T is the temperature profile at all time.
+    u is the velocity (1D, Function of time.).
     """
     Td = np.zeros(globalVar.Nt + 1, dtype=np.float64)
-    depth = np.zeros(globalVar.Nt + 1, dtype=np.float64)
+    depth = scipy.integrate.cumtrapz(np.flip(-u, 0), dx=globalVar.deltat, initial=0)
+    depth = np.flip(depth, 0)
     for n in range(globalVar.Nt, -1, -1):
-        if n == globalVar.Nt:
-            current_depth = 0
-        else:
-            current_depth -= globalVar.deltat * u[n, 0]
-        depth[n] = current_depth
-        i = int(current_depth / globalVar.deltaz)
-        Td[n] = (current_depth - i * globalVar.deltaz) / globalVar.deltaz * (T[n, i + 1] - T[n, i]) + T[n, i]
+        i = int(depth[n] / globalVar.deltaz)
+        # Linear interpolation.
+        Td[n] = (depth[n] - i * globalVar.deltaz) / globalVar.deltaz * (T[n, i + 1] - T[n, i]) + T[n, i]
         # Td[n] = T[n, i]
-    return Td, depth
+    return Td
+
+def get_velocity_transverse(T, Td):
+    """
+    Get velocity history from the thermal history of samples at surface today.
+    T is the temperature profile at all time.
+    Td is the thermal history
+
+    Here use a transversing search method:
+        T(t0) for any t0 is monotonic increasing with z.
+        Search all z to find a z0 which Td(t0) == T(t0, z0)
+    """
+
+    z = np.zeros(globalVar.Nt + 1, dtype=np.float64)
+    for n in range(globalVar.Nt + 1):
+        for i in range(globalVar.Nz + 1):
+            if T[n, i-1] < Td[n] < T[n, i]:
+                # Linear interpolation
+                z[n] = (i - (T[n, i] - Td[n]) / (T[n, i] - T[n, i-1])) * globalVar.deltaz
+    u = np.gradient(z)
+    return u
 
 def main():
     n = 1
@@ -32,7 +52,8 @@ def main():
     # Inversion part start from here (invent data from Tp)
     ###################################################################################
     Tp = CN_N(Ts=globalVar.Ts, p=globalVar.pm, u=u, Tic=Tic_real, kappa=globalVar.kappa,
-             sh=globalVar.sh_continental(globalVar.sh0, globalVar.hr, globalVar.u))[-1, :]
+             sh=globalVar.sh_continental(globalVar.sh0, globalVar.hr, u))[-1, :]
+
     Inversion_method = Inversion_N_BFGS_modified
     start_time = time.perf_counter()
     Tic = Inversion_method(Ts=globalVar.Ts, p=globalVar.pm, kappa=globalVar.kappa,
@@ -86,11 +107,14 @@ def main():
     # Invent data from Tic_real
     # Tic = Tic_real
 
-    T = CN_N(Ts=globalVar.Ts, p=globalVar.pm, u=u, Tic=Tic, kappa=globalVar.kappa,
-             sh=globalVar.sh_continental(globalVar.sh0, globalVar.hr, globalVar.u))
-    Td, depth = get_thermal_history(T, u)
 
-    plot_velocity(globalVar.u_gaussian_time, 'time', PATH, tTotal=globalVar.tTotal)
+    '''Invent data.'''
+    T = CN_N(Ts=globalVar.Ts, p=globalVar.pm, u=u, Tic=Tic, kappa=globalVar.kappa,
+             sh=globalVar.sh_continental(globalVar.sh0, globalVar.hr, u))
+    Td = get_thermal_history(T, u[:, 0])
+    depth = scipy.integrate.cumtrapz(u[:, 0], dx=globalVar.deltat, initial=0)
+
+    plot_velocity(u, 'time', PATH, tTotal=globalVar.tTotal)
 
     plt.plot(T[0, :], np.linspace(0, globalVar.zTotal, globalVar.Nz + 1),
              'r-', label='    0 Ma')
@@ -111,6 +135,8 @@ def main():
     plt.plot(np.linspace(0, globalVar.tTotal, globalVar.Nt + 1), Td)
     plt.savefig(PATH + '/Td.png')
     plt.cla()
+
+    np.savetxt(PATH + '/T.txt', T, fmt='%10.5f')
     np.savetxt(PATH + '/Td.txt', Td, fmt='%10.5f')
     pass
 

@@ -81,6 +81,13 @@ def plot_velocity(u, mode, PATH, zTotal=0, tTotal=0):
         plt.title('u_uniform Velocity field')
         plt.savefig(PATH + '/u.png')
         plt.cla()
+    elif mode == 'space1D':
+        plt.plot(np.linspace(0, zTotal, np.shape(u)[0]), u, color='black')
+        plt.xlabel('z')
+        plt.ylabel('u')
+        plt.title('u_uniform Velocity field')
+        plt.savefig(PATH + '/u.png')
+        plt.cla()
     elif mode == 'time':
         plt.plot(np.linspace(0, tTotal, np.shape(u)[0]), u[:, 0], color='black')
         plt.xlabel('t')
@@ -88,5 +95,13 @@ def plot_velocity(u, mode, PATH, zTotal=0, tTotal=0):
         plt.title('u_uniform Velocity field')
         plt.savefig(PATH + '/u.png')
         plt.cla()
+    elif mode == 'time1D':
+        plt.plot(np.linspace(0, tTotal, np.shape(u)[0]), u, color='black')
+        plt.xlabel('t')
+        plt.ylabel('u')
+        plt.title('u_uniform Velocity field')
+        plt.savefig(PATH + '/u.png')
+        plt.cla()
+
 
 

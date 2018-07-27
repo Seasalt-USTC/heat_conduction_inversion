@@ -11,4 +11,4 @@ J9    = 1.114618
 J10   = 1.114618 
 J11   = 1.091826 
 Return: alphak is too small.
-Total time used: 19.59  
+Total time used: 18.87  

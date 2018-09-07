@@ -32,16 +32,16 @@ def main():
     #                        Td = Td, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH,
     #                        sh=globalVar.sh_uniform * 0.3)
 
-    Td = CN_N(Ts=globalVar.Ts, p=globalVar.pm, kappa=globalVar.kappa, u=globalVar.u, Tic=globalVar.Tic_real,
+    Tp = CN_N(Ts=globalVar.Ts, p=globalVar.pm, kappa=globalVar.kappa, u=globalVar.u, Tic=globalVar.Tic_real,
               sh=globalVar.sh_continental(sh0=globalVar.sh0, hr=globalVar.hr, u=globalVar.u))[-1, :]
     Tic = Inversion_method(Ts=globalVar.Ts, p=globalVar.pm, kappa=globalVar.kappa, u=globalVar.u,
-                           Td = Td, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH,
+                           Tp = Tp, Tic0=globalVar.Tic_guess, epsilon=globalVar.epsilon, MAX=globalVar.MAX, PATH=PATH,
                            sh=globalVar.sh_continental(sh0=globalVar.sh0, hr=globalVar.hr, u=globalVar.u))
 
     np.savetxt(PATH + '/T.txt', Tic, fmt='%10.5f')
 
     # plot
-    plt.plot(Td, np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), 'r-', label='Td')
+    plt.plot(Tp, np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), 'r-', label='Tp')
     plt.plot(globalVar.Tic_real,np.linspace(0, globalVar.zTotal, globalVar.Nz + 1),  'g--', label='Tic_real')
     plt.plot(Tic,np.linspace(0, globalVar.zTotal, globalVar.Nz + 1),  'b-', label='Tic')
     plt.plot(globalVar.Tic_guess, np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), 'b--', label='Tic_guess')
@@ -82,6 +82,7 @@ def main():
 
     plot_log(PATH + '/log.txt', PATH)
 
+    plot_velocity(globalVar.u, mode='time', PATH=PATH, tTotal=globalVar.tTotal)
     pass
 
 if __name__ == '__main__':

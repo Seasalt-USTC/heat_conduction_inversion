@@ -2,12 +2,12 @@ from utils import *
 
 zTotal = 200  # total depth of the box(stick)  km
 # zTotal = 1
-Nz =  100  # space mesh
+Nz =  50  # space mesh
 deltaz = zTotal / Nz  # space step
 
 tTotal = 100  # total time we will compute  Ma
 # tTotal = 1
-Nt = 100  # number of time steps
+Nt = 50  # number of time steps
 # Nt = 10
 deltat = tTotal / Nt  # time step
 
@@ -18,7 +18,7 @@ Ts = 15  # Temperature at the surface  K
 Tb = 0  # Temperature at the bottom (only useful under Dirichlet B.C.)  K
 p = 1  # Temperature gradient at the bottom (only useful under Neumann B.C.)  K * km^-2
 
-epsilon = 1e-4  # Tolerance scope
+epsilon = 1e-3  # Tolerance scope
 MAX = 1000  # Max iteration times
 
 outputTimeStep = 0.01
@@ -27,7 +27,7 @@ outputSpaceStep = 0.01
 qm = 30  # mW * m^-2 == kW * km^-2
 k = 3.35  # W * m^-1 * K^-1 == kW * km^-1 * k^-1
 pm = qm / k
-u_mag = 1  # km * Ma^-1
+u_mag = 0.3  # km * Ma^-1
 rho_H0 = 2.5  # rho*H0 muW * m^-3 == kW * km^-3
 sh0 = rho_H0 * kappa / k  # K * Ma^-1
 hr = 10  # km
@@ -68,7 +68,7 @@ for i in range(Nz + 1):
 u_gaussian_time = np.ones((Nt+1, Nz+1), dtype=np.float32)
 for n in range(Nt+1):
     tn = n * deltat
-    u_gaussian_time[n, :] = - gauss(10**2, 50, tn) * 2
+    u_gaussian_time[n, :] = - gauss(10**2, 50, tn)
 #####################################################################
 
 
@@ -129,9 +129,10 @@ def sh_continental(sh0, hr, u=u0):
 
 
 u = u_uniform * (-u_mag)
+# u = u_gaussian_time * u_mag
 Tic_real = Tic_continent(pm, sh0, hr)
-# Tic_real = Tic11 * zTotal * pm
-Tic_guess = Tic11 * zTotal * pm
+# Tic_real = Tic11 * zTotal * pm + Ts
+Tic_guess = Tic11 * zTotal * pm + Ts
 # Tic_guess = Tic_continent(pm, sh0 * 1.2, hr)
 # Tic_guess = Tic12 * 0.5
 # Tic_guess = np.loadtxt('case/case004/T.txt')

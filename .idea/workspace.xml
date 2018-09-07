@@ -2,346 +2,455 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d9644e7-d0b2-4447-97e8-47bf09f49f3c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/invent_data.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/J.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/T.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/T0/0000T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/T0/0001T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/T0/0002T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/T0/0003T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/T0/0004T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/T0/0005T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/T0/0006T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/T1/0000T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/T1/0001T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/T1/0002T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/T1/0003T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/T1/0004T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/T1/0005T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/T1/0006T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/case003inversion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case003/log.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/J.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T0/0000T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T0/0001T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T0/0002T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T0/0003T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T0/0004T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T0/0005T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T0/0006T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T0/0007T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T1/0000T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T1/0001T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T1/0002T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T1/0003T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T1/0004T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T1/0005T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T1/0006T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/T1/0007T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/case004inversion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case004/log.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/J.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T0/0000T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T0/0001T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T0/0002T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T0/0003T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T0/0004T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T0/0005T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T0/0006T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T0/0007T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T0/0008T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T0/0009T0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T1/0000T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T1/0001T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T1/0002T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T1/0003T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T1/0004T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T1/0005T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T1/0006T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T1/0007T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T1/0008T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/T1/0009T1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/case005inversion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case005/log.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/J.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/J.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0000T0.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0000T0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0001T0.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0001T0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0002T0.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0002T0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0003T0.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0003T0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0004T0.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0004T0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0005T0.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0005T0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0006T0.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0006T0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0007T0.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T0/0007T0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0000T1.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0000T1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0001T1.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0001T1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0002T1.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0002T1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0003T1.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0003T1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0004T1.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0004T1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0005T1.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0005T1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0006T1.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0006T1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0007T1.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T1/0007T1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/case001inversion.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/case001inversion.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/J.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/J.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T0/0000T0.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T0/0000T0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T0/0001T0.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T0/0001T0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T0/0002T0.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T0/0002T0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T0/0003T0.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T0/0003T0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T0/0004T0.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T0/0004T0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T0/0005T0.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T0/0005T0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T0/0006T0.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T0/0006T0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T1/0000T1.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T1/0000T1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T1/0001T1.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T1/0001T1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T1/0002T1.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T1/0002T1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T1/0003T1.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T1/0003T1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T1/0004T1.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T1/0004T1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T1/0005T1.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T1/0005T1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T1/0006T1.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T1/0006T1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/case002inversion.png" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/case002inversion.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T.txt" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/T.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/log.txt" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case001/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T.txt" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/T.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/log.txt" afterPath="$PROJECT_DIR$/case/Neumann/BFGS_modified/case002/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/globalVar.py" afterPath="$PROJECT_DIR$/globalVar.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change afterPath="$PROJECT_DIR$/Plots_for_pre.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fixed_point.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fixed_point_forward.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fixed_point_without_HG.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/necessity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/necessity_single_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/globalVar.py" beforeDir="false" afterPath="$PROJECT_DIR$/globalVar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/invent_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/invent_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/inversion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inversion_T_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/inversion_T_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0000T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0001T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0002T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0003T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0004T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0005T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0006T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0007T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0008T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0009T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0010T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0011T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0012T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0013T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0014T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0015T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0016T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0017T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0018T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0019T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0020T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0021T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0022T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0023T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0024T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0025T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0026T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0027T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0028T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0029T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0030T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0031T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0032T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0033T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T0/0034T0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0000T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0001T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0002T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0003T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0004T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0005T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0006T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0007T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0008T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0009T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0010T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0011T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0012T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0013T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0014T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0015T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0016T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0017T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0018T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0019T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0020T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0021T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0022T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0023T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0024T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0025T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0026T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0027T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0028T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0029T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0030T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0031T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0032T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0033T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/T1/0034T1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td023.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td026.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td028.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td029.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td030.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td031.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td032.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td033.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td034.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td035.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td036.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td037.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td038.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td039.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td040.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td041.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td042.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td043.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td044.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td045.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td046.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td047.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td049.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td050.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td051.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td052.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td053.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td054.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td055.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td056.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td057.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td058.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td059.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td060.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td061.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td062.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td063.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td064.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td065.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td066.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td067.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td068.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td069.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td070.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td071.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td072.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td073.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td074.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td075.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td076.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td077.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td078.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td079.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/Td080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u002.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u003.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u004.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u005.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u006.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u007.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u008.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u009.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u010.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u011.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u012.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u013.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u014.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u015.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u016.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u017.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u018.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u019.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u020.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u021.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u022.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u023.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u023.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u024.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u025.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u026.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u026.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u027.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u028.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u028.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u029.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u029.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u030.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u030.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u031.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u031.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u032.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u032.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u033.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u033.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u034.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u034.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u035.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u035.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u036.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u036.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u037.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u037.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u038.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u038.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u039.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u039.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u040.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u040.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u041.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u041.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u042.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u042.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u043.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u043.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u044.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u044.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u045.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u045.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u046.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u046.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u047.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u047.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u048.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u049.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u049.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u050.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u050.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u051.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u051.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u052.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u052.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u053.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u053.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u054.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u054.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u055.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u055.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u056.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u056.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u057.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u057.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u058.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u058.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u059.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u059.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u060.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u060.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u061.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u061.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u062.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u062.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u063.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u063.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u064.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u064.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u065.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u065.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u066.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u066.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u067.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u067.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u068.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u068.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u069.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u069.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u070.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u070.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u071.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u071.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u072.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u072.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u073.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u073.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u074.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u074.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u075.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u075.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u076.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u076.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u077.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u077.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u078.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u078.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u079.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u079.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/u080.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
-    <option name="TRACKING_ENABLED" value="true" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="763371916">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="557" />
+          <entry key="py" value="7126" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="7683" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="38" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="38" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="inversion.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inversion.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="543" column="124" lean-forward="false" selection-start-line="543" selection-start-column="124" selection-end-line="543" selection-end-column="124" />
-              <folding>
-                <element signature="e#163#2875#0" expanded="false" />
-                <element signature="e#163#361#1" expanded="false" />
-                <element signature="e#454#2875#0" expanded="false" />
-                <element signature="e#487#2789#0" expanded="false" />
-                <element signature="e#607#669#0" expanded="false" />
-                <element signature="e#898#1886#0" expanded="false" />
-                <element signature="e#2025#2097#0" expanded="false" />
-                <element signature="e#2404#2789#0" expanded="false" />
-                <element signature="e#2515#2597#0" expanded="false" />
-                <element signature="e#2817#2875#0" expanded="false" />
-                <element signature="e#2949#5824#0" expanded="false" />
-                <element signature="e#2949#3294#1" expanded="false" />
-                <element signature="e#3361#5781#0" expanded="false" />
-                <element signature="e#3384#3611#0" expanded="false" />
-                <element signature="e#3638#3725#0" expanded="false" />
-                <element signature="e#3932#4825#0" expanded="false" />
-                <element signature="e#5015#5042#0" expanded="false" />
-                <element signature="e#5225#5250#0" expanded="false" />
-                <element signature="e#5899#9188#0" expanded="false" />
-                <element signature="e#5899#6244#1" expanded="false" />
-                <element signature="e#6311#9145#0" expanded="false" />
-                <element signature="e#6334#6595#0" expanded="false" />
-                <element signature="e#6622#6730#0" expanded="false" />
-                <element signature="e#6937#7830#0" expanded="false" />
-                <element signature="e#7990#8017#0" expanded="false" />
-                <element signature="e#8260#8708#0" expanded="false" />
-                <element signature="e#8294#8480#0" expanded="false" />
-                <element signature="e#8515#8708#0" expanded="false" />
-                <element signature="e#9268#12942#0" expanded="false" />
-                <element signature="e#9268#9613#1" expanded="false" />
-                <element signature="e#9691#12942#0" expanded="false" />
-                <element signature="e#9724#12857#0" expanded="false" />
-                <element signature="e#9751#10067#0" expanded="false" />
-                <element signature="e#10102#10214#0" expanded="false" />
-                <element signature="e#10445#11404#0" expanded="false" />
-                <element signature="e#11543#11615#0" expanded="false" />
-                <element signature="e#11954#12394#0" expanded="false" />
-                <element signature="e#12065#12142#0" expanded="false" />
-                <element signature="e#12185#12394#0" expanded="false" />
-                <element signature="e#12884#12942#0" expanded="false" />
-                <element signature="e#13068#13266#1" expanded="false" />
-                <element signature="e#13419#13520#0" expanded="false" />
-                <element signature="e#13555#13617#0" expanded="false" />
-                <element signature="e#13848#14811#0" expanded="false" />
-                <element signature="e#14950#15024#0" expanded="false" />
-                <element signature="e#15335#15587#0" expanded="false" />
-                <element signature="e#15640#15701#0" expanded="false" />
-                <element signature="e#15827#19170#0" expanded="false" />
-                <element signature="e#15827#16025#1" expanded="false" />
-                <element signature="e#16693#16805#0" expanded="false" />
-                <element signature="e#16857#17744#0" expanded="false" />
-                <element signature="e#17884#17958#0" expanded="false" />
-                <element signature="e#19012#19082#0" expanded="false" />
-                <element signature="e#19109#19170#0" expanded="false" />
-                <element signature="e#19289#22251#0" expanded="false" />
-                <element signature="e#19289#19487#1" expanded="false" />
-                <element signature="e#19580#22251#0" expanded="false" />
-                <element signature="e#19613#22163#0" expanded="false" />
-                <element signature="e#19640#19741#0" expanded="false" />
-                <element signature="e#19776#19838#0" expanded="false" />
-                <element signature="e#20069#21032#0" expanded="false" />
-                <element signature="e#21171#21245#0" expanded="false" />
-                <element signature="e#21286#21389#0" expanded="false" />
-                <element signature="e#21424#21666#0" expanded="false" />
-                <element signature="e#21885#22137#0" expanded="false" />
-                <element signature="e#22190#22251#0" expanded="false" />
-                <element signature="e#22381#26038#0" expanded="false" />
-                <element signature="e#23163#23990#0" expanded="false" />
-                <element signature="e#26159#29507#0" expanded="false" />
-                <element signature="e#26159#26357#1" expanded="false" />
-                <element signature="e#27028#27140#0" expanded="false" />
-                <element signature="e#27192#28079#0" expanded="false" />
-                <element signature="e#28219#28293#0" expanded="false" />
-                <element signature="e#29349#29419#0" expanded="false" />
-                <element signature="e#29446#29507#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="87" column="10" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="87" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-                <element signature="e#168#3857#0" expanded="false" />
-                <element signature="e#263#322#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invent_data.py" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/invent_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding>
-                <element signature="e#93#231#0" expanded="false" />
-                <element signature="e#93#159#1" expanded="false" />
-                <element signature="e#253#338#0" expanded="false" />
-                <element signature="e#253#301#1" expanded="false" />
-                <element signature="e#358#443#0" expanded="false" />
-                <element signature="e#358#397#1" expanded="false" />
-                <element signature="e#478#1385#0" expanded="false" />
-                <element signature="e#478#776#1" expanded="false" />
-                <element signature="e#934#1148#0" expanded="false" />
-                <element signature="e#957#1029#0" expanded="false" />
-                <element signature="e#1272#1372#0" expanded="false" />
-                <element signature="e#1299#1332#0" expanded="false" />
-                <element signature="e#1875#2379#0" expanded="false" />
-                <element signature="e#1903#2124#0" expanded="false" />
-                <element signature="e#2158#2379#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="without_real.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/without_real.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+            <state relative-caret-position="378">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <element signature="e#169#2740#0" expanded="false" />
+                <marker date="1535674737411" expanded="true" signature="1473:2161" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forward.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forward.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="53" column="100" lean-forward="false" selection-start-line="53" selection-start-column="100" selection-end-line="53" selection-end-column="100" />
-              <folding>
-                <element signature="e#144#1676#0" expanded="false" />
-                <element signature="e#144#246#1" expanded="false" />
-                <element signature="e#488#1663#0" expanded="false" />
-                <element signature="e#606#862#0" expanded="false" />
-                <element signature="e#646#841#0" expanded="false" />
-                <element signature="e#677#718#0" expanded="false" />
-                <element signature="e#767#808#0" expanded="false" />
-                <element signature="e#906#1130#0" expanded="false" />
-                <element signature="e#1486#1663#0" expanded="false" />
-                <element signature="e#1513#1550#0" expanded="false" />
-                <element signature="e#1591#1628#0" expanded="false" />
-                <element signature="e#1782#3363#0" expanded="false" />
-                <element signature="e#1782#1888#1" expanded="false" />
-                <element signature="e#2351#2871#0" expanded="false" />
-                <element signature="e#2379#2634#0" expanded="false" />
-                <element signature="e#3251#3350#0" expanded="false" />
-                <element signature="e#3278#3315#0" expanded="false" />
-                <element signature="e#3437#4964#0" expanded="false" />
-                <element signature="e#3437#3525#0" expanded="false" />
-                <element signature="e#3873#4951#0" expanded="false" />
-                <element signature="e#3928#4193#0" expanded="false" />
-                <element signature="e#3968#4172#0" expanded="false" />
-                <element signature="e#3999#4040#0" expanded="false" />
-                <element signature="e#4089#4130#0" expanded="false" />
-                <element signature="e#4237#4380#0" expanded="false" />
-                <element signature="e#4774#4951#0" expanded="false" />
-                <element signature="e#4801#4838#0" expanded="false" />
-                <element signature="e#4879#4916#0" expanded="false" />
-                <element signature="e#5005#5452#0" expanded="false" />
-                <element signature="e#5005#5379#1" expanded="false" />
-                <element signature="e#5491#5941#0" expanded="false" />
-                <element signature="e#5491#5869#1" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_global.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_global.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="69" column="42" lean-forward="false" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+            <state relative-caret-position="1332">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Plots_for_pre.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-748">
+              <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1674">
+              <caret line="94" column="32" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inversion.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11034">
+              <caret line="616" column="31" selection-start-line="616" selection-start-column="31" selection-end-line="616" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/globalVar.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2376">
+              <caret line="132" column="24" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/necessity.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1332">
+              <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
               <folding>
-                <element signature="e#24#47#0" expanded="false" />
-                <element signature="e#1169#1243#0" expanded="false" />
-                <element signature="e#1802#1865#0" expanded="false" />
-                <element signature="e#1975#1993#0" expanded="false" />
-                <element signature="e#2034#2201#0" expanded="false" />
-                <element signature="e#3057#3224#0" expanded="false" />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="globalVar.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/globalVar.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/error_diagram.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="558">
+              <caret line="33" selection-start-line="27" selection-end-line="33" />
               <folding>
-                <element signature="e#947#1063#0" expanded="false" />
-                <element signature="e#947#1007#1" expanded="false" />
-                <element signature="e#1373#1489#0" expanded="false" />
-                <element signature="e#1585#1823#0" expanded="false" />
-                <element signature="e#1909#1983#0" expanded="false" />
-                <element signature="e#2080#2149#0" expanded="false" />
-                <element signature="e#2675#2744#0" expanded="false" />
-                <element signature="e#3024#3700#0" expanded="false" />
-                <element signature="e#3024#3433#1" expanded="false" />
-                <element signature="e#3523#3686#0" expanded="false" />
-                <element signature="e#3625#3686#0" expanded="false" />
-                <marker date="1532456455938" expanded="true" signature="4025:4085" ph="..." />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -356,6 +465,17 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Td</find>
+      <find>globalVar.u</find>
+      <find>arrow</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Tp</replace>
+      <replace>u</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -363,19 +483,29 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test_global.py" />
-        <option value="$PROJECT_DIR$/inversion.py" />
         <option value="$PROJECT_DIR$/without_real.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/globalVar.py" />
+        <option value="$PROJECT_DIR$/inversion_T_main.py" />
+        <option value="$PROJECT_DIR$/fixed_point_without_HG.py" />
+        <option value="$PROJECT_DIR$/inversion_u_main.py" />
+        <option value="$PROJECT_DIR$/fixed_point.py" />
+        <option value="$PROJECT_DIR$/necessity_single_test.py" />
+        <option value="$PROJECT_DIR$/fixed_point_forward.py" />
+        <option value="$PROJECT_DIR$/error_diagram.py" />
         <option value="$PROJECT_DIR$/invent_data.py" />
+        <option value="$PROJECT_DIR$/inversion.py" />
+        <option value="$PROJECT_DIR$/necessity.py" />
+        <option value="$PROJECT_DIR$/globalVar.py" />
+        <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/Plots_for_pre.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="290" />
-    <option name="y" value="-25" />
-    <option name="width" value="666" />
-    <option name="height" value="693" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="332" />
+    <option name="y" value="-17" />
+    <option name="width" value="824" />
+    <option name="height" value="561" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -397,21 +527,10 @@
     </entry>
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -423,8 +542,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -438,8 +560,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Plots_for_pre">
+    <configuration name="Plots_for_pre" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="heat_conduction_inversion" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -450,13 +573,17 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="heat_conduction_inversion" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Plots_for_pre.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <configuration name="test_global" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="error_diagram" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="heat_conduction_inversion" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -467,13 +594,17 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="heat_conduction_inversion" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_global.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/error_diagram.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <configuration name="without_real" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="invent_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="heat_conduction_inversion" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -484,53 +615,117 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="heat_conduction_inversion" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/without_real.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/invent_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Python.test_global" />
-      <item index="1" class="java.lang.String" itemvalue="Python.main" />
-      <item index="2" class="java.lang.String" itemvalue="Python.without_real" />
+    <configuration name="inversion_T_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="heat_conduction_inversion" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/inversion_T_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="necessity" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="heat_conduction_inversion" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/necessity.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.necessity" />
+      <item itemvalue="Python.error_diagram" />
+      <item itemvalue="Python.invent_data" />
+      <item itemvalue="Python.Plots_for_pre" />
+      <item itemvalue="Python.inversion_T_main" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.without_real" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test_global" />
+      <list>
+        <item itemvalue="Python.Plots_for_pre" />
+        <item itemvalue="Python.necessity" />
+        <item itemvalue="Python.inversion_T_main" />
+        <item itemvalue="Python.invent_data" />
+        <item itemvalue="Python.error_diagram" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d9644e7-d0b2-4447-97e8-47bf09f49f3c" name="Default" comment="" />
+      <created>1533030637777</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533030637777</updated>
+    </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20079365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921174" sideWeight="0.5031746" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921174" sideWeight="0.4968254" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.4968254" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10686427" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49453977" visible="true" weight="0.32819724" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49843994" weight="0.3990755" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32819724" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.4968254" visible="true" weight="0.3276923" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32921174" />
+      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49921995" weight="0.32819724" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50078005" side_tool="true" weight="0.32819724" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -538,425 +733,184 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/necessity_single_test.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/forward.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="168" column="23" lean-forward="true" selection-start-line="168" selection-start-column="23" selection-end-line="168" selection-end-column="23" />
-          <folding>
-            <element signature="e#144#1676#0" expanded="false" />
-            <element signature="e#144#246#1" expanded="false" />
-            <element signature="e#488#1663#0" expanded="false" />
-            <element signature="e#606#862#0" expanded="false" />
-            <element signature="e#646#841#0" expanded="false" />
-            <element signature="e#677#718#0" expanded="false" />
-            <element signature="e#767#808#0" expanded="false" />
-            <element signature="e#906#1130#0" expanded="false" />
-            <element signature="e#1486#1663#0" expanded="false" />
-            <element signature="e#1513#1550#0" expanded="false" />
-            <element signature="e#1591#1628#0" expanded="false" />
-            <element signature="e#1782#3363#0" expanded="false" />
-            <element signature="e#1782#1888#1" expanded="false" />
-            <element signature="e#2126#3350#0" expanded="false" />
-            <element signature="e#2244#2303#0" expanded="false" />
-            <element signature="e#2351#2871#0" expanded="false" />
-            <element signature="e#2379#2634#0" expanded="false" />
-            <element signature="e#3251#3350#0" expanded="false" />
-            <element signature="e#3278#3315#0" expanded="false" />
-            <element signature="e#3437#4964#0" expanded="false" />
-            <element signature="e#3437#3525#0" expanded="false" />
-            <element signature="e#3873#4951#0" expanded="false" />
-            <element signature="e#3928#4193#0" expanded="false" />
-            <element signature="e#3968#4172#0" expanded="false" />
-            <element signature="e#3999#4040#0" expanded="false" />
-            <element signature="e#4089#4130#0" expanded="false" />
-            <element signature="e#4237#4380#0" expanded="false" />
-            <element signature="e#4774#4951#0" expanded="false" />
-            <element signature="e#4801#4838#0" expanded="false" />
-            <element signature="e#4879#4916#0" expanded="false" />
-            <element signature="e#5005#5452#0" expanded="false" />
-            <element signature="e#5005#5379#1" expanded="false" />
-            <element signature="e#5491#5941#0" expanded="false" />
-            <element signature="e#5491#5869#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding>
-            <element signature="e#93#231#0" expanded="false" />
-            <element signature="e#93#159#1" expanded="false" />
-            <element signature="e#253#338#0" expanded="false" />
-            <element signature="e#253#301#1" expanded="false" />
-            <element signature="e#358#443#0" expanded="false" />
-            <element signature="e#358#397#1" expanded="false" />
-            <element signature="e#478#1385#0" expanded="false" />
-            <element signature="e#478#776#1" expanded="false" />
-            <element signature="e#934#1148#0" expanded="false" />
-            <element signature="e#957#1029#0" expanded="false" />
-            <element signature="e#1272#1372#0" expanded="false" />
-            <element signature="e#1299#1332#0" expanded="false" />
-            <element signature="e#1480#1815#0" expanded="false" />
-            <element signature="e#1524#1604#0" expanded="false" />
-            <element signature="e#1875#2379#0" expanded="false" />
-            <element signature="e#1903#2124#0" expanded="false" />
-            <element signature="e#2158#2379#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_global.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#47#0" expanded="false" />
-            <element signature="e#1169#1243#0" expanded="false" />
-            <element signature="e#1802#1865#0" expanded="false" />
-            <element signature="e#1975#1993#0" expanded="false" />
-            <element signature="e#2034#2201#0" expanded="false" />
-            <element signature="e#3057#3224#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#168#3857#0" expanded="false" />
-            <element signature="e#263#322#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/globalVar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding>
-            <element signature="e#947#1063#0" expanded="false" />
-            <element signature="e#947#1007#1" expanded="false" />
-            <element signature="e#1373#1489#0" expanded="false" />
-            <element signature="e#1585#1823#0" expanded="false" />
-            <element signature="e#1909#1983#0" expanded="false" />
-            <element signature="e#2080#2149#0" expanded="false" />
-            <element signature="e#2675#2744#0" expanded="false" />
-            <element signature="e#3024#3700#0" expanded="false" />
-            <element signature="e#3024#3433#1" expanded="false" />
-            <element signature="e#3523#3686#0" expanded="false" />
-            <element signature="e#3625#3686#0" expanded="false" />
-            <marker date="1532456455938" expanded="true" signature="4025:4085" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inversion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="320" column="0" lean-forward="true" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
-          <folding>
-            <element signature="e#163#2875#0" expanded="false" />
-            <element signature="e#163#361#1" expanded="false" />
-            <element signature="e#454#2875#0" expanded="false" />
-            <element signature="e#487#2789#0" expanded="false" />
-            <element signature="e#607#669#0" expanded="false" />
-            <element signature="e#898#1886#0" expanded="false" />
-            <element signature="e#2025#2097#0" expanded="false" />
-            <element signature="e#2404#2789#0" expanded="false" />
-            <element signature="e#2515#2597#0" expanded="false" />
-            <element signature="e#2817#2875#0" expanded="false" />
-            <element signature="e#2949#5824#0" expanded="false" />
-            <element signature="e#2949#3294#1" expanded="false" />
-            <element signature="e#3361#5781#0" expanded="false" />
-            <element signature="e#3384#3611#0" expanded="false" />
-            <element signature="e#3638#3725#0" expanded="false" />
-            <element signature="e#3932#4825#0" expanded="false" />
-            <element signature="e#5015#5042#0" expanded="false" />
-            <element signature="e#5225#5250#0" expanded="false" />
-            <element signature="e#5899#9188#0" expanded="false" />
-            <element signature="e#5899#6244#1" expanded="false" />
-            <element signature="e#6311#9145#0" expanded="false" />
-            <element signature="e#6334#6595#0" expanded="false" />
-            <element signature="e#6622#6730#0" expanded="false" />
-            <element signature="e#6937#7830#0" expanded="false" />
-            <element signature="e#7990#8017#0" expanded="false" />
-            <element signature="e#8260#8708#0" expanded="false" />
-            <element signature="e#8294#8480#0" expanded="false" />
-            <element signature="e#8515#8708#0" expanded="false" />
-            <element signature="e#9268#12942#0" expanded="false" />
-            <element signature="e#9268#9613#1" expanded="false" />
-            <element signature="e#9691#12942#0" expanded="false" />
-            <element signature="e#9724#12857#0" expanded="false" />
-            <element signature="e#9751#10067#0" expanded="false" />
-            <element signature="e#10102#10214#0" expanded="false" />
-            <element signature="e#10445#11404#0" expanded="false" />
-            <element signature="e#11543#11615#0" expanded="false" />
-            <element signature="e#11954#12394#0" expanded="false" />
-            <element signature="e#12065#12142#0" expanded="false" />
-            <element signature="e#12185#12394#0" expanded="false" />
-            <element signature="e#12884#12942#0" expanded="false" />
-            <element signature="e#13068#13266#1" expanded="false" />
-            <element signature="e#13419#13520#0" expanded="false" />
-            <element signature="e#13555#13617#0" expanded="false" />
-            <element signature="e#13848#14811#0" expanded="false" />
-            <element signature="e#14950#15024#0" expanded="false" />
-            <element signature="e#15335#15587#0" expanded="false" />
-            <element signature="e#15640#15701#0" expanded="false" />
-            <element signature="e#15827#19170#0" expanded="false" />
-            <element signature="e#15827#16025#1" expanded="false" />
-            <element signature="e#16693#16805#0" expanded="false" />
-            <element signature="e#16857#17744#0" expanded="false" />
-            <element signature="e#17884#17958#0" expanded="false" />
-            <element signature="e#19012#19082#0" expanded="false" />
-            <element signature="e#19109#19170#0" expanded="false" />
-            <element signature="e#19289#22251#0" expanded="false" />
-            <element signature="e#19289#19487#1" expanded="false" />
-            <element signature="e#19580#22251#0" expanded="false" />
-            <element signature="e#19613#22163#0" expanded="false" />
-            <element signature="e#19640#19741#0" expanded="false" />
-            <element signature="e#19776#19838#0" expanded="false" />
-            <element signature="e#20069#21032#0" expanded="false" />
-            <element signature="e#21171#21245#0" expanded="false" />
-            <element signature="e#21286#21389#0" expanded="false" />
-            <element signature="e#21424#21666#0" expanded="false" />
-            <element signature="e#21885#22137#0" expanded="false" />
-            <element signature="e#22190#22251#0" expanded="false" />
-            <element signature="e#22381#26038#0" expanded="false" />
-            <element signature="e#23163#23990#0" expanded="false" />
-            <element signature="e#26159#29507#0" expanded="false" />
-            <element signature="e#26159#26357#1" expanded="false" />
-            <element signature="e#27028#27140#0" expanded="false" />
-            <element signature="e#27192#28079#0" expanded="false" />
-            <element signature="e#28219#28293#0" expanded="false" />
-            <element signature="e#29349#29419#0" expanded="false" />
-            <element signature="e#29446#29507#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inversion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="543" column="124" lean-forward="false" selection-start-line="543" selection-start-column="124" selection-end-line="543" selection-end-column="124" />
-          <folding>
-            <element signature="e#163#2875#0" expanded="false" />
-            <element signature="e#163#361#1" expanded="false" />
-            <element signature="e#454#2875#0" expanded="false" />
-            <element signature="e#487#2789#0" expanded="false" />
-            <element signature="e#607#669#0" expanded="false" />
-            <element signature="e#898#1886#0" expanded="false" />
-            <element signature="e#2025#2097#0" expanded="false" />
-            <element signature="e#2404#2789#0" expanded="false" />
-            <element signature="e#2515#2597#0" expanded="false" />
-            <element signature="e#2817#2875#0" expanded="false" />
-            <element signature="e#2949#5824#0" expanded="false" />
-            <element signature="e#2949#3294#1" expanded="false" />
-            <element signature="e#3361#5781#0" expanded="false" />
-            <element signature="e#3384#3611#0" expanded="false" />
-            <element signature="e#3638#3725#0" expanded="false" />
-            <element signature="e#3932#4825#0" expanded="false" />
-            <element signature="e#5015#5042#0" expanded="false" />
-            <element signature="e#5225#5250#0" expanded="false" />
-            <element signature="e#5899#9188#0" expanded="false" />
-            <element signature="e#5899#6244#1" expanded="false" />
-            <element signature="e#6311#9145#0" expanded="false" />
-            <element signature="e#6334#6595#0" expanded="false" />
-            <element signature="e#6622#6730#0" expanded="false" />
-            <element signature="e#6937#7830#0" expanded="false" />
-            <element signature="e#7990#8017#0" expanded="false" />
-            <element signature="e#8260#8708#0" expanded="false" />
-            <element signature="e#8294#8480#0" expanded="false" />
-            <element signature="e#8515#8708#0" expanded="false" />
-            <element signature="e#9268#12942#0" expanded="false" />
-            <element signature="e#9268#9613#1" expanded="false" />
-            <element signature="e#9691#12942#0" expanded="false" />
-            <element signature="e#9724#12857#0" expanded="false" />
-            <element signature="e#9751#10067#0" expanded="false" />
-            <element signature="e#10102#10214#0" expanded="false" />
-            <element signature="e#10445#11404#0" expanded="false" />
-            <element signature="e#11543#11615#0" expanded="false" />
-            <element signature="e#11954#12394#0" expanded="false" />
-            <element signature="e#12065#12142#0" expanded="false" />
-            <element signature="e#12185#12394#0" expanded="false" />
-            <element signature="e#12884#12942#0" expanded="false" />
-            <element signature="e#13068#13266#1" expanded="false" />
-            <element signature="e#13419#13520#0" expanded="false" />
-            <element signature="e#13555#13617#0" expanded="false" />
-            <element signature="e#13848#14811#0" expanded="false" />
-            <element signature="e#14950#15024#0" expanded="false" />
-            <element signature="e#15335#15587#0" expanded="false" />
-            <element signature="e#15640#15701#0" expanded="false" />
-            <element signature="e#15827#19170#0" expanded="false" />
-            <element signature="e#15827#16025#1" expanded="false" />
-            <element signature="e#16693#16805#0" expanded="false" />
-            <element signature="e#16857#17744#0" expanded="false" />
-            <element signature="e#17884#17958#0" expanded="false" />
-            <element signature="e#19012#19082#0" expanded="false" />
-            <element signature="e#19109#19170#0" expanded="false" />
-            <element signature="e#19289#22251#0" expanded="false" />
-            <element signature="e#19289#19487#1" expanded="false" />
-            <element signature="e#19580#22251#0" expanded="false" />
-            <element signature="e#19613#22163#0" expanded="false" />
-            <element signature="e#19640#19741#0" expanded="false" />
-            <element signature="e#19776#19838#0" expanded="false" />
-            <element signature="e#20069#21032#0" expanded="false" />
-            <element signature="e#21171#21245#0" expanded="false" />
-            <element signature="e#21286#21389#0" expanded="false" />
-            <element signature="e#21424#21666#0" expanded="false" />
-            <element signature="e#21885#22137#0" expanded="false" />
-            <element signature="e#22190#22251#0" expanded="false" />
-            <element signature="e#22381#26038#0" expanded="false" />
-            <element signature="e#23163#23990#0" expanded="false" />
-            <element signature="e#26159#29507#0" expanded="false" />
-            <element signature="e#26159#26357#1" expanded="false" />
-            <element signature="e#27028#27140#0" expanded="false" />
-            <element signature="e#27192#28079#0" expanded="false" />
-            <element signature="e#28219#28293#0" expanded="false" />
-            <element signature="e#29349#29419#0" expanded="false" />
-            <element signature="e#29446#29507#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forward.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="53" column="100" lean-forward="false" selection-start-line="53" selection-start-column="100" selection-end-line="53" selection-end-column="100" />
-          <folding>
-            <element signature="e#144#1676#0" expanded="false" />
-            <element signature="e#144#246#1" expanded="false" />
-            <element signature="e#488#1663#0" expanded="false" />
-            <element signature="e#606#862#0" expanded="false" />
-            <element signature="e#646#841#0" expanded="false" />
-            <element signature="e#677#718#0" expanded="false" />
-            <element signature="e#767#808#0" expanded="false" />
-            <element signature="e#906#1130#0" expanded="false" />
-            <element signature="e#1486#1663#0" expanded="false" />
-            <element signature="e#1513#1550#0" expanded="false" />
-            <element signature="e#1591#1628#0" expanded="false" />
-            <element signature="e#1782#3363#0" expanded="false" />
-            <element signature="e#1782#1888#1" expanded="false" />
-            <element signature="e#2351#2871#0" expanded="false" />
-            <element signature="e#2379#2634#0" expanded="false" />
-            <element signature="e#3251#3350#0" expanded="false" />
-            <element signature="e#3278#3315#0" expanded="false" />
-            <element signature="e#3437#4964#0" expanded="false" />
-            <element signature="e#3437#3525#0" expanded="false" />
-            <element signature="e#3873#4951#0" expanded="false" />
-            <element signature="e#3928#4193#0" expanded="false" />
-            <element signature="e#3968#4172#0" expanded="false" />
-            <element signature="e#3999#4040#0" expanded="false" />
-            <element signature="e#4089#4130#0" expanded="false" />
-            <element signature="e#4237#4380#0" expanded="false" />
-            <element signature="e#4774#4951#0" expanded="false" />
-            <element signature="e#4801#4838#0" expanded="false" />
-            <element signature="e#4879#4916#0" expanded="false" />
-            <element signature="e#5005#5452#0" expanded="false" />
-            <element signature="e#5005#5379#1" expanded="false" />
-            <element signature="e#5491#5941#0" expanded="false" />
-            <element signature="e#5491#5869#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#93#231#0" expanded="false" />
-            <element signature="e#93#159#1" expanded="false" />
-            <element signature="e#253#338#0" expanded="false" />
-            <element signature="e#253#301#1" expanded="false" />
-            <element signature="e#358#443#0" expanded="false" />
-            <element signature="e#358#397#1" expanded="false" />
-            <element signature="e#478#1385#0" expanded="false" />
-            <element signature="e#478#776#1" expanded="false" />
-            <element signature="e#934#1148#0" expanded="false" />
-            <element signature="e#957#1029#0" expanded="false" />
-            <element signature="e#1272#1372#0" expanded="false" />
-            <element signature="e#1299#1332#0" expanded="false" />
-            <element signature="e#1875#2379#0" expanded="false" />
-            <element signature="e#1903#2124#0" expanded="false" />
-            <element signature="e#2158#2379#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py" />
     <entry file="file://$PROJECT_DIR$/without_real.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Mr_Lemon/python/virtual environment/NumericalWork/Lib/site-packages/matplotlib/colors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3132">
+          <caret line="211" selection-start-line="211" selection-end-line="211" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Mr_Lemon/python/virtual environment/NumericalWork/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="709" selection-start-line="709" selection-end-line="709" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixed_point_without_HG.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-226">
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Mr_Lemon/python/virtual environment/NumericalWork/Lib/site-packages/numpy/core/numeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="1952" selection-start-line="1952" selection-end-line="1952" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Mr_Lemon/python/virtual environment/NumericalWork/Lib/site-packages/scipy/integrate/quadrature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="294" selection-start-line="294" selection-end-line="294" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Mr_Lemon/python/virtual environment/NumericalWork/Lib/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="2164" selection-start-line="2164" selection-end-line="2164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Mr_Lemon/python/virtual environment/NumericalWork/Lib/site-packages/numpy/lib/function_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="1509" column="4" selection-start-line="1509" selection-start-column="4" selection-end-line="1509" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/necessity_single_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#169#2740#0" expanded="false" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/globalVar.py">
+    <entry file="file://$PROJECT_DIR$/fixed_point.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding>
-            <element signature="e#947#1063#0" expanded="false" />
-            <element signature="e#947#1007#1" expanded="false" />
-            <element signature="e#1373#1489#0" expanded="false" />
-            <element signature="e#1585#1823#0" expanded="false" />
-            <element signature="e#1909#1983#0" expanded="false" />
-            <element signature="e#2080#2149#0" expanded="false" />
-            <element signature="e#2675#2744#0" expanded="false" />
-            <element signature="e#3024#3700#0" expanded="false" />
-            <element signature="e#3024#3433#1" expanded="false" />
-            <element signature="e#3523#3686#0" expanded="false" />
-            <element signature="e#3625#3686#0" expanded="false" />
-            <marker date="1532456455938" expanded="true" signature="4025:4085" ph="..." />
-          </folding>
+        <state relative-caret-position="324">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_global.py">
+    <entry file="file://$PROJECT_DIR$/forward.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="69" column="42" lean-forward="false" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
-          <folding>
-            <element signature="e#24#47#0" expanded="false" />
-            <element signature="e#1169#1243#0" expanded="false" />
-            <element signature="e#1802#1865#0" expanded="false" />
-            <element signature="e#1975#1993#0" expanded="false" />
-            <element signature="e#2034#2201#0" expanded="false" />
-            <element signature="e#3057#3224#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/inversion_u_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="87" column="10" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="87" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#168#3857#0" expanded="false" />
-            <element signature="e#263#322#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="20" column="110" selection-start-line="20" selection-start-column="110" selection-end-line="20" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixed_point_forward.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inversion_T_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1134">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/invent_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="378">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1535674737411" expanded="true" signature="1473:2161" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_global.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1332">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="94" column="32" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inversion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11034">
+          <caret line="616" column="31" selection-start-line="616" selection-start-column="31" selection-end-line="616" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/globalVar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="132" column="24" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/necessity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1332">
+          <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error_diagram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="33" selection-start-line="27" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plots_for_pre.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-748">
+          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
         </state>
       </provider>
     </entry>

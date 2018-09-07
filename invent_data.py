@@ -1,5 +1,6 @@
 from inversion import *
 import scipy.integrate
+import scipy.interpolate
 import time
 
 def get_thermal_history(T, u):
@@ -35,7 +36,23 @@ def get_velocity_transverse(T, Td):
             if T[n, i-1] < Td[n] < T[n, i]:
                 # Linear interpolation
                 z[n] = (i - (T[n, i] - Td[n]) / (T[n, i] - T[n, i-1])) * globalVar.deltaz
-    u = np.gradient(z)
+    u = np.gradient(z, globalVar.deltat)
+    return u
+
+def get_velocity_BE(T, Td):
+    """
+    Backwards Euler method.
+    """
+    zd = np.zeros(globalVar.Nt + 1)
+    Td_t = np.gradient(Td, globalVar.deltat)  # dTd/dt
+    T_t = np.gradient(T, globalVar.deltat, axis=0)  # dT/dt
+    T_z = np.gradient(T, globalVar.deltaz, axis=1)  # dT/dz
+    for n in range(globalVar.Nt, 0, -1):
+        T_t_n = scipy.interpolate.interp1d(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T_t[n], kind='cubic')
+        T_z_n = scipy.interpolate.interp1d(np.linspace(0, globalVar.zTotal, globalVar.Nz + 1), T_z[n], kind='cubic')
+        F = (Td_t[n] + T_t_n(zd[n])) / T_z_n(zd[n])
+        zd[n - 1] = zd[n] - globalVar.deltat * F
+    u = np.gradient(zd, globalVar.deltat)
     return u
 
 def main():
@@ -114,7 +131,7 @@ def main():
     Td = get_thermal_history(T, u[:, 0])
     depth = scipy.integrate.cumtrapz(u[:, 0], dx=globalVar.deltat, initial=0)
 
-    plot_velocity(u, 'time', PATH, tTotal=globalVar.tTotal)
+    # plot_velocity(u, 'time', PATH, tTotal=globalVar.tTotal)
 
     plt.plot(T[0, :], np.linspace(0, globalVar.zTotal, globalVar.Nz + 1),
              'r-', label='    0 Myr')
@@ -138,7 +155,15 @@ def main():
 
     np.savetxt(PATH + '/T.txt', T, fmt='%10.5f')
     np.savetxt(PATH + '/Td.txt', Td, fmt='%10.5f')
-    pass
+
+    u_r_transverse = get_velocity_transverse(T, Td)
+    u_r_BE = get_velocity_BE(T, Td)
+    plt.plot(u[:, 0], label='real')
+    plt.plot(u_r_transverse, label='transverse')
+    plt.plot(u_r_BE, label='BE')
+    plt.legend()
+    plt.savefig(PATH + '/u.png')
+    plt.cla()
 
 if __name__ == '__main__':
     main()

@@ -1,0 +1,180 @@
+J0    = 588.1309 
+J1    = 203.3686 
+J2    = 38.8271  
+J3    = 36.67646 
+J4    = 3.439884 
+Return: J is lower than epsilon.
+J0    = 347.0159 
+J1    = 121.2409 
+J2    = 26.98781 
+J3    = 25.51429 
+J4    = 6.106224 
+Return: J is lower than epsilon.
+J0    = 263.7458 
+J1    = 93.35435 
+J2    = 23.30914 
+J3    = 22.05005 
+J4    = 7.227081 
+Return: J is lower than epsilon.
+J0    = 240.5308 
+J1    = 85.68809 
+J2    = 22.45159 
+J3    = 21.24285 
+J4    = 7.651038 
+Return: J is lower than epsilon.
+J0    = 239.8673 
+J1    = 85.42451 
+J2    = 22.41521 
+J3    = 21.2101  
+J4    = 7.670988 
+Return: J is lower than epsilon.
+J0    = 246.1682 
+J1    = 87.37543 
+J2    = 22.53548 
+J3    = 21.32612 
+J4    = 7.521162 
+Return: J is lower than epsilon.
+J0    = 253.894  
+J1    = 89.78187 
+J2    = 22.68698 
+J3    = 21.47177 
+J4    = 7.351406 
+Return: J is lower than epsilon.
+J0    = 261.6429 
+J1    = 92.24031 
+J2    = 22.89175 
+J3    = 21.667   
+J4    = 7.217927 
+Return: J is lower than epsilon.
+J0    = 269.1438 
+J1    = 94.67914 
+J2    = 23.16147 
+J3    = 21.92259 
+J4    = 7.125138 
+Return: J is lower than epsilon.
+J0    = 276.1    
+J1    = 96.9867  
+J2    = 23.46649 
+J3    = 22.21074 
+J4    = 7.06076  
+Return: J is lower than epsilon.
+J0    = 281.9642 
+J1    = 98.9558  
+J2    = 23.75168 
+J3    = 22.47978 
+J4    = 7.013229 
+Return: J is lower than epsilon.
+J0    = 286.1006 
+J1    = 100.3518 
+J2    = 23.96096 
+J3    = 22.67714 
+J4    = 6.976868 
+Return: J is lower than epsilon.
+J0    = 288.0014 
+J1    = 100.9911 
+J2    = 24.05441 
+J3    = 22.76533 
+J4    = 6.95123  
+Return: J is lower than epsilon.
+J0    = 287.4352 
+J1    = 100.7923 
+J2    = 24.01582 
+J3    = 22.72911 
+J4    = 6.938647 
+Return: J is lower than epsilon.
+J0    = 284.5104 
+J1    = 99.79588 
+J2    = 23.85474 
+J3    = 22.57743 
+J4    = 6.942554 
+Return: J is lower than epsilon.
+J0    = 279.6614 
+J1    = 98.1538  
+J2    = 23.59876 
+J3    = 22.3362  
+J4    = 6.96407  
+Return: J is lower than epsilon.
+J0    = 273.5458 
+J1    = 96.09392 
+J2    = 23.28865 
+J3    = 22.04379 
+J4    = 7.003021 
+Return: J is lower than epsilon.
+J0    = 266.9569 
+J1    = 93.88731 
+J2    = 22.97006 
+J3    = 21.74322 
+J4    = 7.056691 
+Return: J is lower than epsilon.
+J0    = 260.7211 
+J1    = 91.81263 
+J2    = 22.68676 
+J3    = 21.47574 
+J4    = 7.119852 
+Return: J is lower than epsilon.
+J0    = 255.5722 
+J1    = 90.11345 
+J2    = 22.47326 
+J3    = 21.27398 
+J4    = 7.185032 
+Return: J is lower than epsilon.
+J0    = 252.0825 
+J1    = 88.97637 
+J2    = 22.35298 
+J3    = 21.1601  
+J4    = 7.243795 
+Return: J is lower than epsilon.
+J0    = 250.6132 
+J1    = 88.51564 
+J2    = 22.33689 
+J3    = 21.14459 
+J4    = 7.28794  
+Return: J is lower than epsilon.
+J0    = 251.3011 
+J1    = 88.76968 
+J2    = 22.42396 
+J3    = 21.22658 
+J4    = 7.310664 
+Return: J is lower than epsilon.
+J0    = 254.0678 
+J1    = 89.70585 
+J2    = 22.60384 
+J3    = 21.39645 
+J4    = 7.308241 
+Return: J is lower than epsilon.
+J0    = 258.6496 
+J1    = 91.23025 
+J2    = 22.85749 
+J3    = 21.63634 
+J4    = 7.279605 
+Return: J is lower than epsilon.
+J0    = 264.6061 
+J1    = 93.19201 
+J2    = 23.15949 
+J3    = 21.92231 
+J4    = 7.22726  
+Return: J is lower than epsilon.
+J0    = 271.3588 
+J1    = 95.39757 
+J2    = 23.48142 
+J3    = 22.22753 
+J4    = 7.157263 
+Return: J is lower than epsilon.
+J0    = 278.2139 
+J1    = 97.61728 
+J2    = 23.79073 
+J3    = 22.5212  
+J4    = 7.077271 
+Return: J is lower than epsilon.
+J0    = 284.3829 
+J1    = 99.59186 
+J2    = 24.05093 
+J3    = 22.76876 
+J4    = 6.9956   
+Return: J is lower than epsilon.
+J0    = 289.0658 
+J1    = 101.0611 
+J2    = 24.22721 
+J3    = 22.93719 
+J4    = 6.921238 
+Return: J is lower than epsilon.
